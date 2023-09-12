@@ -1,0 +1,5 @@
+﻿treatment,time,prob_of_infection,lower_CI,upper_CI
+sham,after,0.938,0.811,0.981
+vaccine,after,0.952,0.851,0.985
+sham,before,0.576,0.307,0.807
+vaccine,before,0.457,0.222,0.713

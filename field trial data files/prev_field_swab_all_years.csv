@@ -1,0 +1,5 @@
+﻿treatment,time,prob_of_infection,lower.CL,upper.CL,SE
+sham,after,0.142,0.0038,0.877,0.234
+vaccine,after,0.22,0.00647,0.924,0.33
+sham,before,0.77,0.26901,0.968,0.199
+vaccine,before,0.846,0.37302,0.981,0.148

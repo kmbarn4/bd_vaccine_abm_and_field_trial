@@ -1,0 +1,1084 @@
+---
+title: "chapter3_figurepart1"
+author: "KM Barnett"
+date: "8/25/2023"
+output: html_document
+---
+
+load packages
+```{r setup, include=FALSE}
+library(ggplot2)
+library(colorspace)
+library(mgcv)
+library(itsadug)
+library("viridis")
+library("RColorBrewer")
+library("tidyverse")
+library(doBy)
+library("psych")
+
+color_palette <- rev(brewer.pal(9, "PRGn"))
+color_min <- -125
+color_max <- 125
+
+quartz.options(width=4.5, height=4.5)
+
+```
+
+anti-infection immunity (reduction in establishment)
+coverage levels: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100%
+vaccine efficacy levels: -10, -20, -30, -40, -50, -60, -70, -80, -90, -100% decrease in baseline est
+```{r setup, include=FALSE}
+est_one_mode <- read.csv(file = '/Users/kmbarnett/Desktop/upload to github/abm data files /one mode/anti_infection_vs_coverage.csv')
+head(est_one_mode)
+
+#transform raw efficacy values to more interpretable % changes in efficacy
+est_one_mode <- est_one_mode %>%
+  mutate(c_est_transformed = round(1-exp(c_est), 2))
+head(est_one_mode)
+
+```
+
+
+anti-infection immunity infection intensity plot
+```{r}
+##populate a column with control value in the dataset
+est_one_mode <- est_one_mode %>%
+  mutate(median_inf_inten_control = 254.5)
+est_one_mode
+
+##calculate relative change in infection intensity
+est_one_mode=est_one_mode %>%
+  mutate(relative_inf_inten = ((median_spn_inten_metas - median_inf_inten_control) / (median_inf_inten_control)) * 100)
+
+est_one_mode <- est_one_mode %>%
+  mutate(c_est_transformed = c_est_transformed*100)
+head(est_one_mode)
+
+est_one_mode <- est_one_mode %>%
+  mutate(v.coverage = v.coverage*100)
+head(est_one_mode)
+
+inf_inten_c_est_one_mode <- gam(relative_inf_inten  ~ te(c_est_transformed, v.coverage), data=est_one_mode, family="gaussian")
+
+fvisgam(inf_inten_c_est_one_mode, view=c("c_est_transformed", "v.coverage"), color = color_palette, main="Percent Change in Infection Intensity",  
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Establishment",n.seg=2, zlim = c(color_min, color_max), add.color.legend = FALSE, hide.label = TRUE)
+
+```
+
+anti-infection immunity population size plot
+```{r}
+##populate a column with control value in the dataset - median
+est_one_mode <- est_one_mode %>%
+  mutate(control.count.median = 147.5)
+est_one_mode
+
+##calculate relative change in population size - median
+est_one_mode=est_one_mode %>%
+  mutate(relative_count_meta_median = ((count.metamorphs - control.count.median) / (control.count.median)) * 100)
+
+### Vaccine Coverage by Establishment Metamorph Population Size - median
+meta_pop_size_est_one_mode <- gam(relative_count_meta_median ~ te(c_est_transformed, v.coverage), data=est_one_mode, family="gaussian")
+fvisgam(meta_pop_size_est_one_mode, view=c("c_est_transformed", "v.coverage"), color = color_palette,main="Percent Change in Frog Population",  
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Establishment", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-infection immunity prevalence plot
+```{r}
+
+##populate a column with that value in the dataset
+est_one_mode <- est_one_mode %>%
+  mutate(median_prev_control = 1)
+est_one_mode
+
+##calculate relative change in prevalence
+est_one_mode=est_one_mode %>%
+  mutate(relative_prev = ((metas_prev - median_prev_control) / (median_prev_control)) * 100)
+
+##make plot
+m_prev_one_mode_est <- gam(relative_prev ~ te(c_est_transformed, v.coverage), data=est_one_mode, family="gaussian")
+
+prev_est_one_mode <- gam(relative_prev  ~ te(c_est_transformed, v.coverage), data=est_one_mode, family="gaussian")
+
+fvisgam(prev_est_one_mode, view=c("c_est_transformed", "v.coverage"), color = color_palette, main="Percent Change in Infection Prevalence",  
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Establishment", n.seg=2, zlim = c(color_min, color_max), add.color.legend = FALSE, hide.label = TRUE)
+
+
+```
+
+anti-infection immunity zoospore density plot
+```{r}
+
+##populate a column with that value in the dataset
+est_one_mode <- est_one_mode %>%
+  mutate(control.zsp.density = 409702)
+est_one_mode
+
+##calculate relative change in prevalence
+est_one_mode=est_one_mode %>%
+  mutate(relative_zsp_density = ((total.zsp.density - control.zsp.density) / control.zsp.density) * 100)
+
+##make plot
+zsp.density.est.one_mode <- gam(relative_zsp_density ~ te(c_est_transformed, v.coverage), data=est_one_mode, family="gaussian")
+
+fvisgam(zsp.density.est.one_mode, view=c("c_est_transformed", "v.coverage"), color = color_palette,main="Percent Change in Zoospore Density",  
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Establishment", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+tolerance vs. coverage figures
+10 coverage levels: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100%
+10 protection efficacy levels: +10, +20, +30, +40, +50, +60, +70, +80, +90, +100% increase in baseline tolerance
+tolerance vs. coverage infection intensity figure
+```{r}
+smax_one_way <- read.csv(file = "/Users/kmbarnett/Desktop/upload to github/abm data files /one mode/tolerance_vs_coverage.csv")
+head(smax_one_way)
+
+#transform raw efficacy values to more interpretable % changes in efficacy
+smax_one_way <- smax_one_way %>%
+  mutate(c_smax_transformed = round(exp(c_smax)-1, 2))
+head(smax_one_way)
+
+##populate a column with control value in the data set
+smax_one_way <- smax_one_way %>%
+  mutate(median_inf_inten_control = 254.5)
+
+##calculate relative change in infection intensity
+smax_one_way=smax_one_way %>%
+  mutate(relative_inf_inten = ((median_spn_inten_metas - median_inf_inten_control) / (median_inf_inten_control)) * 100)
+
+smax_one_way <- smax_one_way %>%
+  mutate(c_smax_transformed = c_smax_transformed*100)
+
+smax_one_way <- smax_one_way %>%
+  mutate(v.coverage = v.coverage*100)
+
+#Infection Intensity of one_way tolerance 
+inf_inten_c_smax_one_way <- gam(relative_inf_inten  ~ te(c_smax_transformed, v.coverage), data=smax_one_way, family="gaussian")
+
+fvisgam(inf_inten_c_smax_one_way, view=c("c_smax_transformed", "v.coverage"), color = color_palette, main="Percent Change in Infection Intensity", 
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Tolerance", n.seg=2, zlim = c(color_min, color_max), add.color.legend = FALSE, hide.label = TRUE)
+
+```
+
+tolerance vs. coverage population size
+```{r}
+##populate a column with control value in the data set
+smax_one_way <- smax_one_way %>%
+  mutate(control.count.average_1 = 147.5)
+
+##calculate relative change in population size
+smax_one_way=smax_one_way %>%
+  mutate(relative_metamorph_count1 = ((count.metamorphs - control.count.average_1) / (control.count.average_1)) * 100)
+
+meta_pop_size_smax_one_way <- gam(relative_metamorph_count1 ~ te(c_smax_transformed, v.coverage), data=smax_one_way, family="gaussian")
+
+fvisgam(meta_pop_size_smax_one_way, view=c("c_smax_transformed", "v.coverage"), color = color_palette, main="Percent Change in Frog Population", 
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Tolerance", n.seg=2, zlim = c(color_min, color_max), add.color.legend = FALSE, hide.label = TRUE)
+
+```
+
+tolerance vs. coverage prevalence figure
+```{r}
+
+##populate a column with that value in the dataset
+smax_one_way <- smax_one_way %>%
+  mutate(median_prev_control = 1)
+smax_one_way
+
+##calculate relative change in prevalence
+smax_one_way=smax_one_way %>%
+  mutate(relative_prev = ((metas_prev - median_prev_control) / (median_prev_control)) * 100)
+
+##make plot
+m_prev_one_way_smax <- gam(relative_prev ~ te(c_smax_transformed, v.coverage), data=smax_one_way, family="gaussian")
+
+fvisgam(m_prev_one_way_smax, view=c("c_smax_transformed", "v.coverage"), color = color_palette, main="% Change in Infection Prevalence", ylab = "% Population Coverage", xlab = "% Increase in Baseline Tolerance", n.seg=2, zlim = c(color_min, color_max), , add.color.legend = FALSE, hide.label = TRUE)
+quartz.options(width=4, height=4)
+
+```
+
+tolerance vs. coverage zoospore density figure
+```{r}
+
+##populate a column with that control value in the dataset
+smax_one_way <- smax_one_way %>%
+  mutate(control.zsp.density = 409702)
+
+##calculate relative change in prevalence
+smax_one_way=smax_one_way %>%
+  mutate(relative_zsp_density = ((total.zsp.density - control.zsp.density) / control.zsp.density) * 100)
+
+##make plot
+zsp.density.smax.one_way <- gam(relative_zsp_density ~ te(c_smax_transformed, v.coverage), data=smax_one_way, family="gaussian")
+
+fvisgam(zsp.density.smax.one_way, view=c("c_smax_transformed", "v.coverage"), color = color_palette, main="Percent Change in Zoospore Density", 
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Tolerance", n.seg=2, zlim = c(color_min, color_max), add.color.legend = FALSE, hide.label = TRUE)
+
+```
+
+
+anti-transmission immunity vs. coverage
+11 coverage levels: 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100%
+10 harm-based efficacy levels: -10, -20, -30, -40, -50, -60, -70, -80, -90, -100% decrease in baseline shedding
+```{r setup, include=FALSE}
+shedding_one_mode <- read.csv(file = '/Users/kmbarnett/Desktop/upload to github/abm data files /one mode/anti_transmission_vs_coverage.csv')
+head(shedding_one_mode)
+
+#transform raw efficacy values to more interpretable % changes in efficacy
+shedding_one_mode <- shedding_one_mode %>%
+  mutate(c_shedding_transformed = round(1-exp(c_shedding), 2))
+head(shedding_one_mode)
+
+shedding_one_mode<- shedding_one_mode %>%
+  mutate(v.coverage = v.coverage*100)
+
+shedding_one_mode <- shedding_one_mode %>%
+  mutate(c_shedding_transformed = c_shedding_transformed*100)
+
+```
+
+anti-transmission immunity vs. coverage infection intensity plot
+```{r}
+
+##populate a column with that value in the dataset
+shedding_one_mode <- shedding_one_mode %>%
+  mutate(median_inf_inten_control = 254.5)
+shedding_one_mode
+
+##calculate relative change in prevalence
+shedding_one_mode=shedding_one_mode %>%
+  mutate(relative_inf_inten = ((median_spn_inten_metas - median_inf_inten_control) / (median_inf_inten_control)) * 100)
+
+inf_inten_c_shedding_one_mode <- gam(relative_inf_inten  ~ te(c_shedding_transformed, v.coverage), data=shedding_one_mode, family="gaussian")
+
+fvisgam(inf_inten_c_shedding_one_mode, view=c("c_shedding_transformed", "v.coverage"), color = color_palette, 
+        main="Percent Change in Infection Intensity",  
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Shedding", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-transmission immunity vs. coverage population size plot
+```{r}
+
+shedding_one_mode <- shedding_one_mode %>%
+  mutate(control.count.median = 147.5)
+
+shedding_one_mode=shedding_one_mode %>%
+  mutate(relative_count_meta = ((count.metamorphs - control.count.median) / (control.count.median)) * 100)
+
+meta_pop_size_shedding_one_mode <- gam(relative_count_meta ~ te(c_shedding_transformed, v.coverage), data=shedding_one_mode, family="gaussian")
+
+fvisgam(meta_pop_size_shedding_one_mode, view=c("c_shedding_transformed", "v.coverage"), color = color_palette, main="Percent Change in Frog Population",  
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Shedding", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-transmission immunity vs. coverage prevalence plot
+```{r}
+##populate a column with that value in the dataset
+shedding_one_mode <- shedding_one_mode %>%
+  mutate(median_prev_control = 1)
+shedding_one_mode
+
+##calculate relative change in prevalence
+shedding_one_mode=shedding_one_mode %>%
+  mutate(relative_prev = ((metas_prev - median_prev_control) / (median_prev_control)) * 100)
+
+prev_one_mode_shedding <- gam(relative_prev ~ te(c_shedding_transformed, v.coverage), data=shedding_one_mode, family="gaussian")
+
+fvisgam(prev_one_mode_shedding, view=c("c_shedding_transformed", "v.coverage"), color = color_palette, main="Percent Change in Infection Prevalence",  
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Shedding", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-transmission immunity vs. coverage zoospore density plot
+```{r}
+
+##populate a column with that value in the dataset
+shedding_one_mode <- shedding_one_mode %>%
+  mutate(control.zsp.density = 409702)
+
+##calculate relative change in prevalence
+shedding_one_mode=shedding_one_mode %>%
+  mutate(relative_zsp_density = ((total.zsp.density - control.zsp.density) / control.zsp.density) * 100)
+
+##make plot
+zsp.density.shedding.one_mode <- gam(relative_zsp_density ~ te(c_shedding_transformed, v.coverage), data=shedding_one_mode, family="gaussian")
+
+fvisgam(zsp.density.shedding.one_mode, view=c("c_shedding_transformed", "v.coverage"), color = color_palette, main="Percent Change in Zoospore Density",  
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Shedding", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+
+anti-growth immunity vs. coverage
+10 coverage levels: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100%
+10 protection efficacy levels: -10, -20, -30, -40, -50, -60, -70, -80, -90, -100% decrease in baseline clearance
+anti-growth immunity vs. coverage infection intensity figure
+```{r}
+
+clear_one_mode <-  read.csv(file = "/Users/kmbarnett/Desktop/upload to github/abm data files /one mode/anti-growth_vs_coverage.csv")
+head(clear_one_mode)
+
+#transform raw efficacy values to more interpretable % changes in efficacy
+clear_one_mode <- clear_one_mode %>%
+  mutate(c_clear_transformed = round(exp(c_clear)-1, 2))
+
+clear_one_mode<- clear_one_mode %>%
+  mutate(v.coverage = v.coverage*100)
+
+clear_one_mode <- clear_one_mode %>%
+  mutate(c_clear_transformed = c_clear_transformed*100)
+
+##populate a column with the control value
+clear_one_mode <- clear_one_mode %>%
+  mutate(median_inf_inten_control = 254.5	)
+
+view(clear_one_mode)
+
+##calculate relative change 
+clear_one_mode=clear_one_mode %>%
+  mutate(relative_inf_inten = ((median_spn_inten_metas - median_inf_inten_control) / (median_inf_inten_control)) * 100)
+
+inf_inten_c_clear_one_mode <- gam(relative_inf_inten  ~ te(c_clear_transformed, v.coverage), data=clear_one_mode, family="gaussian")
+
+fvisgam(inf_inten_c_clear_one_mode, view=c("c_clear_transformed", "v.coverage"), color = color_palette, main="Percent Change in Infection Intensity",  
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Clearance", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-growth immunity vs. coverage  population size
+```{r}
+clear_one_mode <- clear_one_mode %>%
+  mutate(control.count.average_1 = 147.5)
+
+clear_one_mode=clear_one_mode %>%
+  mutate(relative_metamorph_count1 = ((count.metamorphs - control.count.average_1) / (control.count.average_1)) * 100)
+
+meta_pop_size_clear_one_way <- gam(relative_metamorph_count1 ~ te(c_clear_transformed, v.coverage), data=clear_one_mode, family="gaussian")
+
+fvisgam(meta_pop_size_clear_one_way, view=c("c_clear_transformed", "v.coverage"), color = color_palette, main="Percent Change in Frog Population",  
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Clearance", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-growth immunity vs. coverage prevalence
+```{r}
+
+##populate a column with the control value in the dataset
+clear_one_mode <- clear_one_mode %>%
+  mutate(median_prev_control = 1)
+clear_one_mode
+
+##calculate relative change in prevalence
+clear_one_mode=clear_one_mode %>%
+  mutate(relative_prev = ((metas_prev - median_prev_control) / (median_prev_control)) * 100)
+
+##make plot
+prev_one_way_clear <- gam(relative_prev ~ te(c_clear_transformed, v.coverage), data=clear_one_mode, family="gaussian")
+fvisgam(prev_one_way_clear, view=c("c_clear_transformed", "v.coverage"), color = color_palette,  main="Percent Change in Infection Prevalence",  
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Clearance", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-growth immunity vs. coverage zsp density
+```{r}
+
+##populate a column with the control value in the dataset
+clear_one_mode<- clear_one_mode %>%
+  mutate(control.zsp.density = 409702)
+
+##calculate relative change in prevalence
+clear_one_mode=clear_one_mode %>%
+  mutate(relative_zsp_density = ((total.zsp.density - control.zsp.density) / control.zsp.density) * 100)
+
+##set relative change to be zero for all scenarios where vaccination coverage is 0
+clear_one_mode <- clear_one_mode %>% 
+  mutate(relative_zsp_density = if_else(v.coverage == 0, 0, relative_zsp_density))
+#view(clear_one_mode)
+
+##make plot
+zsp.density.clear.one_way <- gam(relative_zsp_density ~ te(c_clear_transformed, v.coverage), data=clear_one_mode, family="gaussian")
+
+font_sizes <- list(title = 26, axis.title = 24, axis.text = 24)
+
+fvisgam(zsp.density.clear.one_way, view=c("c_clear_transformed", "v.coverage"), color = color_palette, main="Percent Change in Zoospore Density",  
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Clearance", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max), font.size = font_sizes)
+
+
+```
+
+anti-growth immunity vs. tolerance
+vaccine coverage= 75%
+smax efficacy levels: 0, -10, -20, -30, -40, -50, -60, -70, -80, -90, -100% decrease in baseline smax
+clearance efficacy levels: 0, +10, +20, +30, +40, +50, +60, +70, +80, +90, +100% increase in baseline clearance
+```{r setup, include=FALSE}
+clear_tol <- read.csv(file = '/Users/kmbarnett/Desktop/upload to github/abm data files /2-way interactions/anti_growth_vs_tolerance.csv')
+head(clear_tol)
+
+#transform raw efficacy values to more interpretable % changes in efficacy
+clear_tol <- clear_tol %>%
+  mutate(c_smax_transformed = round(exp(c_smax)-1, 2))
+
+clear_tol <- clear_tol%>%
+  mutate(c_clear_transformed = round(exp(c_clear)-1, 2))
+
+clear_tol<- clear_tol %>%
+  mutate(c_smax_transformed = c_smax_transformed*100)
+
+clear_tol <- clear_tol %>%
+  mutate(c_clear_transformed = c_clear_transformed*100)
+
+```
+
+anti-growth immunity vs. tolerance infection intensity plot
+```{r}
+
+##populate a column with that value in the dataset
+clear_tol <- clear_tol %>%
+  mutate(median_inf_inten_control = 254.5)
+clear_tol
+
+##calculate relative change in infection intensity
+clear_tol=clear_tol %>%
+  mutate(relative_inf_inten = ((median_spn_inten_metas - median_inf_inten_control) / (median_inf_inten_control)) * 100)
+
+inf_inten_c_clear_tol <- gam(relative_inf_inten  ~ te(c_clear_transformed, c_smax_transformed), data=clear_tol, family="gaussian")
+
+fvisgam(inf_inten_c_clear_tol, view=c("c_clear_transformed", "c_smax_transformed"), color = color_palette, main="Percent Change in Infection Intensity", 
+        ylab = "Percent Increase in Tolerance", xlab = "Percent Increase in Clearance", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-growth immunity vs. tolerance population size plot
+```{r}
+
+clear_tol <- clear_tol %>%
+  mutate(control.count.average_1 = 147.5)
+
+clear_tol=clear_tol %>%
+  mutate(relative_metamorph_count1 = ((count.metamorphs - control.count.average_1) / (control.count.average_1)) * 100)
+
+meta_pop_size_clear_tol <- gam(relative_metamorph_count1 ~ te(c_clear_transformed, c_smax_transformed), data=clear_tol, family="gaussian")
+
+fvisgam(meta_pop_size_clear_tol, view=c("c_clear_transformed", "c_smax_transformed"), color = color_palette, main="Percent Change in Frog Population", 
+        ylab = "Percent Increase in Tolerance", xlab = "Percent Increase in Clearance", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-growth immunity vs. tolerance prevalence plot
+```{r}
+
+##populate a column with that value in the dataset
+clear_tol <- clear_tol %>%
+  mutate(median_prev_control = 1)
+
+##calculate relative change in prevalence
+clear_tol=clear_tol %>%
+  mutate(relative_prev = ((metas_prev - median_prev_control) / (median_prev_control)) * 100)
+
+##make plot
+prev_tol_clear <- gam(relative_prev ~ te(c_clear_transformed, c_smax_transformed), data=clear_tol, family="gaussian")
+
+fvisgam(prev_tol_clear, view=c("c_clear_transformed", "c_smax_transformed"), color = color_palette, main="Percent Change in Infection Prevalence", 
+        ylab = "Percent Increase in Tolerance", xlab = "Percent Increase in Clearance", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-growth immunity vs. tolerance zoospore density plot
+```{r}
+
+##populate a column with that value in the dataset
+clear_tol <- clear_tol %>%
+  mutate(control.zsp.density = 409702)
+
+##calculate relative change in prevalence
+clear_tol=clear_tol %>%
+  mutate(relative_zsp_density = ((total.zsp.density - control.zsp.density) / control.zsp.density) * 100)
+
+##make plot
+zsp.density.clear.tol <- gam(relative_zsp_density ~ te(c_clear_transformed, c_smax_transformed), data=clear_tol, family="gaussian")
+
+fvisgam(zsp.density.clear.tol, view=c("c_clear_transformed", "c_smax_transformed"), color = color_palette, main="Percent Change in Zoospore Density", 
+        ylab = "Percent Increase in Tolerance", xlab = "Percent Increase in Clearance", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-infection immunity vs.tolerance
+vaccine coverage= 75%
+10 smax efficacy levels: 0, -10, -20, -30, -40, -50, -60, -70, -80, -90, -100% decrease in baseline smax
+10 est efficacy levels: 0, +10, +20, +30, +40, +50, +60, +70, +80, +90, +100% increase in baseline establishment
+```{r setup, include=FALSE}
+est_tol <- read.csv(file = '/Users/kmbarnett/Desktop/upload to github/abm data files /2-way interactions/anti_infection_vs_tolerance.csv')
+head(est_tol)
+
+#transform raw efficacy values to more interpretable % changes in efficacy
+est_tol <- est_tol %>%
+  mutate(c_smax_transformed = round(exp(c_smax)-1, 2))
+#view(est_tol)
+
+est_tol <- est_tol%>%
+  mutate(c_est_transformed = round(1-exp(c_est), 2))
+#head(est_tol)
+
+est_tol<- est_tol %>%
+  mutate(c_smax_transformed = c_smax_transformed*100)
+
+est_tol <- est_tol %>%
+  mutate(c_est_transformed = c_est_transformed*100)
+
+```
+
+anti-infection immunity vs.tolerance infection intensity plot
+```{r}
+
+##populate a column with control value in the dataset
+est_tol <- est_tol %>%
+  mutate(median_inf_inten_control = 254.5	)
+
+##calculate relative change in infection intensity
+est_tol=est_tol %>%
+  mutate(relative_inf_inten = ((median_spn_inten_metas - median_inf_inten_control) / (median_inf_inten_control)) * 100)
+
+inf_inten_c_est_tol <- gam(relative_inf_inten  ~ te(c_est_transformed, c_smax_transformed), data=est_tol, family="gaussian")
+
+fvisgam(inf_inten_c_est_tol, view=c("c_est_transformed", "c_smax_transformed"), color = color_palette, main="Percent Change in Infection Intensity", 
+        ylab = "Percent Increase in Tolerance", xlab = "Percent Decrease in Establishment", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-infection immunity vs.tolerance population size plot
+```{r}
+est_tol <- est_tol %>%
+  mutate(control.count.average_1 = 147.5)
+
+est_tol=est_tol %>%
+  mutate(relative_metamorph_count1 = ((count.metamorphs - control.count.average_1) / (control.count.average_1)) * 100)
+
+meta_pop_size_est_tol <- gam(relative_metamorph_count1 ~ te(c_est_transformed, c_smax_transformed), data=est_tol, family="gaussian")
+
+fvisgam(meta_pop_size_est_tol, view=c("c_est_transformed", "c_smax_transformed"), color = color_palette, main="Percent Change in Frog Population", 
+        ylab = "Percent Increase in Tolerance", xlab = "Percent Decrease in Establishment", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-infection immunity vs.tolerance prevalence plot
+```{r}
+
+##populate a column with the control value
+est_tol <- est_tol %>%
+  mutate(median_prev_control = 1)
+
+##calculate relative change in prevalence
+est_tol=est_tol %>%
+  mutate(relative_prev = ((metas_prev - median_prev_control) / (median_prev_control)) * 100)
+
+m_prev_tol_est <- gam(relative_prev ~ te(c_est_transformed, c_smax_transformed), data=est_tol, family="gaussian")
+
+fvisgam(m_prev_tol_est, view=c("c_est_transformed", "c_smax_transformed"), color = color_palette, main="Percent Change in Infection Prevalence", 
+        ylab = "Percent Increase in Tolerance", xlab = "Percent Decrease in Establishment", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+
+
+```
+
+anti-infection immunity vs.tolerance zoospore density plot
+```{r}
+
+##populate a column with that value in the dataset
+est_tol <- est_tol %>%
+  mutate(control.zsp.density = 409702)
+
+##calculate relative change in prevalence
+est_tol=est_tol %>%
+  mutate(relative_zsp_density = ((total.zsp.density - control.zsp.density) / control.zsp.density) * 100)
+
+zsp.density.est.tol <- gam(relative_zsp_density ~ te(c_est_transformed, c_smax_transformed), data=est_tol, family="gaussian")
+
+fvisgam(zsp.density.est.tol, view=c("c_est_transformed", "c_smax_transformed"), color = color_palette, main="Percent Change in Zoospore Density", 
+        ylab = "Percent Increase in Tolerance", xlab = "Percent Decrease in Establishment", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+
+```
+
+anti-transmission vs. tolerance
+vaccine coverage= 75%
+10 smax efficacy levels: -10, -20, -30, -40, -50, -60, -70, -80, -90, -100% decrease in baseline smax
+10 shedding efficacy levels: +10, +20, +30, +40, +50, +60, +70, +80, +90, +100% increase in baseline shedding
+
+```{r setup, include=FALSE}
+shedding_tol <- read.csv(file = '/Users/kmbarnett/Desktop/upload to github/abm data files /2-way interactions/anti_transmission_vs_tolerance.csv')
+head(shedding_tol)
+
+#transform raw efficacy values to more interpretable % changes in efficacy
+shedding_tol <- shedding_tol %>%
+  mutate(c_smax_transformed = round(exp(c_smax)-1, 2))
+
+shedding_tol <- shedding_tol%>%
+  mutate(c_shedding_transformed = round(1-exp(c_shedding), 2))
+
+shedding_tol<- shedding_tol %>%
+  mutate(c_smax_transformed = c_smax_transformed*100)
+
+shedding_tol <- shedding_tol %>%
+  mutate(c_shedding_transformed = c_shedding_transformed*100)
+
+```
+
+anti-transmission vs. tolerance infection intensity plot
+```{r}
+
+##populate a column with the control value in the dataset
+shedding_tol <- shedding_tol %>%
+  mutate(median_inf_inten_control = 254.5)
+
+##calculate relative change in infection intensity
+shedding_tol=shedding_tol %>%
+  mutate(relative_inf_inten = ((median_spn_inten_metas - median_inf_inten_control) / (median_inf_inten_control)) * 100)
+
+inf_inten_c_shedding_tol <- gam(relative_inf_inten  ~ te(c_shedding_transformed, c_smax_transformed), data=shedding_tol, family="gaussian")
+
+fvisgam(inf_inten_c_shedding_tol, view=c("c_shedding_transformed", "c_smax_transformed"), color = color_palette, main="Percent Change in Infection Intensity", 
+        ylab = "Percent Increase in Tolerance", xlab = "Percent Decrease in Pathogen Shedding", n.seg=2, zlim = c(color_min, color_max), add.color.legend = FALSE, hide.label = TRUE)
+
+```
+
+anti-transmission vs. tolerance metamorph population plot
+```{r}
+shedding_tol <- shedding_tol %>%
+  mutate(control.count.average_1 = 147.5)
+
+shedding_tol=shedding_tol %>%
+  mutate(relative_metamorph_count1 = ((count.metamorphs - control.count.average_1) / (control.count.average_1)) * 100)
+
+meta_pop_size_shedding_tol <- gam(relative_metamorph_count1 ~ te(c_shedding_transformed, c_smax_transformed), data=shedding_tol, family="gaussian")
+
+fvisgam(meta_pop_size_shedding_tol, view=c("c_shedding_transformed", "c_smax_transformed"), color = color_palette, main="Percent Change in Frog Population", 
+        ylab = "Percent Increase in Tolerance", xlab = "Percent Decrease in Pathogen Shedding", n.seg=2, zlim = c(color_min, color_max), 
+        add.color.legend = FALSE, hide.label = TRUE)
+
+```
+
+anti-transmission vs. tolerance prevalence plot
+```{r}
+
+##populate a column with that value in the dataset
+shedding_tol <- shedding_tol %>%
+  mutate(median_prev_control = 1)
+
+##calculate relative change in prevalence
+shedding_tol=shedding_tol %>%
+  mutate(relative_prev = ((metas_prev - median_prev_control) / (median_prev_control)) * 100)
+
+##make plot
+m_prev_tol_shedding <- gam(relative_prev ~ te(c_shedding_transformed, c_smax_transformed), data=shedding_tol, family="gaussian")
+fvisgam(m_prev_tol_shedding, view=c("c_shedding_transformed", "c_smax_transformed"), color = color_palette, main="Percent Change in Infection Prevalence", 
+        ylab = "Percent Increase in Tolerance", xlab = "Percent Decrease in Pathogen Shedding", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+anti-transmission vs. tolerance zoospore density plot
+```{r}
+
+##populate a column with that value in the dataset
+shedding_tol <- shedding_tol %>%
+  mutate(control.zsp.density = 409702)
+shedding_tol
+
+##calculate relative change in prevalence
+shedding_tol=shedding_tol %>%
+  mutate(relative_zsp_density = ((total.zsp.density - control.zsp.density) / control.zsp.density) * 100)
+
+zsp.density.shedding.tol <- gam(relative_zsp_density ~ te(c_shedding_transformed, c_smax_transformed), data=shedding_tol, family="gaussian")
+
+fvisgam(zsp.density.shedding.tol, view=c("c_shedding_transformed", "c_smax_transformed"), color = color_palette, main="Percent Change in Zoospore Density", 
+        ylab = "Percent Increase in Tolerance", xlab = "Percent Decrease in Pathogen Shedding", add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+
+```
+
+Vaccine induces harm (aka vaccine-associated enhanced disease = vaed)
+Increasing Transmission vs. Coverage
+10 coverage levels: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100%
+10 harm-based efficacy levels: +10, +20, +30, +40, +50, +60, +70, +80, +90, +100% increase in baseline Shedding
+```{r setup, include=FALSE}
+shedding_vaed <- read.csv(file = '/Users/kmbarnett/Desktop/upload to github/abm data files /vaccine causes harm/increased_transmission.csv')
+
+#transform raw efficacy values to more interpretable % changes in efficacy
+shedding_vaed <- shedding_vaed %>%
+  mutate(c_shedding_transformed = round(exp(c_shedding)-1, 2))
+
+shedding_vaed <- shedding_vaed%>%
+  mutate(c_shedding_transformed = c_shedding_transformed*100)
+
+shedding_vaed<- shedding_vaed %>%
+  mutate(v.coverage = v.coverage*100)
+
+```
+
+increasing transmission vs. coverage infection intensity plot
+```{r}
+
+##populate a column with that value in the dataset
+shedding_vaed <- shedding_vaed %>%
+  mutate(median_inf_inten_control = 254.5)
+
+##calculate relative change in prevalence
+shedding_vaed=shedding_vaed %>%
+  mutate(relative_inf_inten = ((median_spn_inten_metas - median_inf_inten_control) / (median_inf_inten_control)) * 100)
+
+inf_inten_c_shedding_vaed <- gam(relative_inf_inten  ~ te(c_shedding_transformed, v.coverage), data=shedding_vaed, family="gaussian")
+
+fvisgam(inf_inten_c_shedding_vaed, view=c("c_shedding_transformed", "v.coverage"), color = color_palette, main="Percent Change in Infection Intensity", 
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Pathogen Shedding", n.seg=2, zlim = c(color_min, color_max), add.color.legend = FALSE, hide.label = TRUE)
+
+```
+
+increasing transmission vs. coverage infection intensity population size plot
+```{r}
+shedding_vaed <- shedding_vaed %>%
+  mutate(control.count.median = 147.5)
+
+shedding_vaed=shedding_vaed %>%
+  mutate(relative_count_meta = ((count.metamorphs - control.count.median) / (control.count.median)) * 100)
+
+meta_pop_size_shedding_vaed <- gam(relative_count_meta ~ te(c_shedding_transformed, v.coverage), data=shedding_vaed, family="gaussian")
+
+fvisgam(meta_pop_size_shedding_vaed, view=c("c_shedding_transformed", "v.coverage"), color = color_palette, main="Percent Change in Frog Population", 
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Pathogen Shedding", n.seg=2, zlim = c(color_min, color_max), add.color.legend = FALSE, hide.label = TRUE)
+
+
+```
+
+increasing transmission vs. coverage infection intensity prevalence plot
+```{r}
+
+##populate a column with that value in the dataset
+shedding_vaed <- shedding_vaed %>%
+  mutate(median_prev_control = 1)
+shedding_vaed
+
+##calculate relative change in prevalence
+shedding_vaed=shedding_vaed %>%
+  mutate(relative_prev = ((metas_prev - median_prev_control) / (median_prev_control)) * 100)
+
+m_prev_vaed_shedding <- gam(relative_prev ~ te(c_shedding_transformed, v.coverage), data=shedding_vaed, family="gaussian")
+
+fvisgam(m_prev_vaed_shedding, view=c("c_shedding_transformed", "v.coverage"), color = color_palette, main="Percent Change in Infection Prevalence", 
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Pathogen Shedding",add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+
+```
+
+increasing transmission vs. coverage infection intensity zoospore density plot
+```{r}
+
+##populate a column with the control value in the dataset
+shedding_vaed <- shedding_vaed %>%
+  mutate(control.zsp.density = 409702)
+
+##calculate relative change in prevalence
+shedding_vaed=shedding_vaed %>%
+  mutate(relative_zsp_density = ((total.zsp.density - control.zsp.density) / control.zsp.density) * 100)
+
+zsp.density.shedding.vaed <- gam(relative_zsp_density ~ te(c_shedding_transformed, v.coverage), data=shedding_vaed, family="gaussian")
+
+color_palette <- rev(brewer.pal(9, "PRGn"))
+color_min <- -250
+color_max <- 250
+
+fvisgam(zsp.density.shedding.vaed, view=c("c_shedding_transformed", "v.coverage"), color = color_palette, main="Percent Change in Zoospore Density", 
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Pathogen Shedding",add.color.legend = FALSE, hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+```
+
+decrease infection clearance vs. coverage
+10 coverage levels: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100%
+10 harm-based efficacy levels: +10, +20, +30, +40, +50, +60, +70, +80, +90, +100% increase in baseline clearance
+```{r setup, include=FALSE}
+clearance_vaed <- read.csv(file = '/Users/kmbarnett/Desktop/upload to github/abm data files /vaccine causes harm/decreasing_clearance.csv')
+head(clearance_vaed)
+
+color_palette <- rev(brewer.pal(9, "PRGn"))
+color_min <- -125
+color_max <- 125
+
+#transform raw efficacy values to more interpretable % changes in efficacy
+clearance_vaed <- clearance_vaed %>%
+  mutate(c_clear_transformed = round(1-exp(c_clear), 2))
+
+clearance_vaed <- clearance_vaed%>%
+  mutate(c_clear_transformed = c_clear_transformed*100)
+
+clearance_vaed<- clearance_vaed %>%
+  mutate(v.coverage = v.coverage*100)
+
+```
+
+decrease infection clearance vs. coverage infection intensity plot
+```{r}
+
+##populate a column with that value in the dataset
+clearance_vaed <- clearance_vaed %>%
+  mutate(median_inf_inten_control = 254.5	)
+
+##calculate relative change in prevalence
+clearance_vaed=clearance_vaed %>%
+  mutate(relative_inf_inten = ((median_spn_inten_metas - median_inf_inten_control) / (median_inf_inten_control)) * 100)
+
+inf_inten_c_clear_vaed <- gam(relative_inf_inten  ~ te(c_clear_transformed, v.coverage), data=clearance_vaed, family="gaussian")
+
+fvisgam(inf_inten_c_clear_vaed, view=c("c_clear_transformed", "v.coverage"), color = color_palette, main="Percent Change in Infection Intensity", 
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Clearance",add.color.legend = FALSE,hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+decrease infection clearance vs. coverage population size plot
+```{r}
+
+clearance_vaed <- clearance_vaed %>%
+  mutate(control.count.median = 147.5)
+
+clearance_vaed=clearance_vaed %>%
+  mutate(relative_count_meta = ((count.metamorphs - control.count.median) / (control.count.median)) * 100)
+
+meta_pop_size_clearance_vaed <- gam(relative_count_meta ~ te(c_clear_transformed, v.coverage), data=clearance_vaed, family="gaussian")
+
+fvisgam(meta_pop_size_clearance_vaed, view=c("c_clear_transformed", "v.coverage"), color = color_palette, main="Percent Change in Frog Population", 
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Clearance",add.color.legend = FALSE,hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+
+```
+
+decrease infection clearance vs. coverage prevalence plot
+```{r}
+
+##populate a column with the control value in the dataset
+clearance_vaed <- clearance_vaed %>%
+  mutate(median_prev_control = 1)
+
+##calculate relative change in prevalence
+clearance_vaed=clearance_vaed %>%
+  mutate(relative_prev = ((metas_prev - median_prev_control) / (median_prev_control)) * 100)
+
+m_prev_vaed_clearance <- gam(relative_prev ~ te(c_clear_transformed, v.coverage), data=clearance_vaed, family="gaussian")
+
+fvisgam(m_prev_vaed_clearance, view=c("c_clear_transformed", "v.coverage"), color = color_palette, main="Percent Change in Infection Prevalence", 
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Clearance",add.color.legend = FALSE,hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+decrease infection clearance vs. coverage zoospore density plot
+```{r}
+
+##populate a column with that value in the dataset
+clearance_vaed <- clearance_vaed %>%
+  mutate(control.zsp.density = 409702)
+clearance_vaed
+
+##calculate relative change in prevalence
+clearance_vaed=clearance_vaed %>%
+  mutate(relative_zsp_density = ((total.zsp.density - control.zsp.density) / control.zsp.density) * 100)
+
+zsp.density.clearance.vaed <- gam(relative_zsp_density ~ te(c_clear_transformed, v.coverage), data=clearance_vaed, family="gaussian")
+
+color_palette <- rev(brewer.pal(11, "PRGn"))
+color_min <- -250
+color_max <- 250
+
+fvisgam(zsp.density.clearance.vaed, view=c("c_clear_transformed", "v.coverage"), color = color_palette, main="Percent Change in Zoospore Density", 
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Clearance",add.color.legend = FALSE,hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+decreasing tolerance vs. coverage
+10 coverage levels: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100%
+10 harm-based efficacy levels: -10, -20, -30, -40, -50, -60, -70, -80, -90, -100% decrease in baseline smax
+```{r setup, include=FALSE}
+smax_vaed <- read.csv(file = '/Users/kmbarnett/Desktop/upload to github/abm data files /vaccine causes harm/decreasing_tolerance.csv')
+head(smax_vaed)
+
+color_palette <- rev(brewer.pal(9, "PRGn"))
+color_min <- -125
+color_max <- 125
+
+#transform raw efficacy values to more interpretable % changes in efficacy
+smax_vaed <- smax_vaed %>%
+  mutate(c_smax_transformed = round(1-exp(c_smax), 2))
+head(smax_vaed)
+
+smax_vaed <- smax_vaed%>%
+  mutate(c_smax_transformed = c_smax_transformed*100)
+
+smax_vaed<- smax_vaed %>%
+  mutate(v.coverage = v.coverage*100)
+
+```
+
+decreasing tolerance vs. coverage infection intensity plot
+```{r}
+##populate a column with the control value in the dataset
+smax_vaed <- smax_vaed %>%
+  mutate(median_inf_inten_control = 254.5)
+smax_vaed
+
+##calculate relative change in prevalence
+smax_vaed=smax_vaed %>%
+  mutate(relative_inf_inten = ((median_spn_inten_metas - median_inf_inten_control) / (median_inf_inten_control)) * 100)
+
+inf_inten_c_smax_vaed <- gam(relative_inf_inten  ~ te(c_smax_transformed, v.coverage), data=smax_vaed, family="gaussian")
+
+fvisgam(inf_inten_c_smax_vaed, view=c("c_smax_transformed", "v.coverage"), color = color_palette, main="Percent Change in Infection Intensity", 
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Tolerance",add.color.legend = FALSE,hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+decreasing tolerance vs. coverage population size plot
+```{r}
+
+smax_vaed <- smax_vaed %>%
+  mutate(control.count.median = 147.5)
+smax_vaed
+
+smax_vaed=smax_vaed %>%
+  mutate(relative_count_meta = ((count.metamorphs - control.count.median) / (control.count.median)) * 100)
+
+meta_pop_size_smax_vaed <- gam(relative_count_meta ~ te(c_smax_transformed, v.coverage), data=smax_vaed, family="gaussian")
+
+fvisgam(meta_pop_size_smax_vaed, view=c("c_smax_transformed", "v.coverage"), color = color_palette, main="Percent Change in Frog Population", 
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Tolerance",add.color.legend = FALSE,hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+decreasing tolerance vs. coverage prevalence plot
+```{r}
+
+##populate a column with the control value in the dataset
+smax_vaed <- smax_vaed %>%
+  mutate(median_prev_control = 1)
+smax_vaed
+
+##calculate relative change in prevalence
+smax_vaed=smax_vaed %>%
+  mutate(relative_prev = ((metas_prev - median_prev_control) / (median_prev_control)) * 100)
+
+m_prev_vaed_smax <- gam(relative_prev ~ te(c_smax_transformed, v.coverage), data=smax_vaed, family="gaussian")
+
+fvisgam(m_prev_vaed_smax, view=c("c_smax_transformed", "v.coverage"), color = color_palette, main="Percent Change in Infection Prevalence", 
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Tolerance",add.color.legend = FALSE,hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+decreasing tolerance vs. coverage zoospore density plot
+```{r}
+
+##populate a column with that value in the dataset
+smax_vaed <- smax_vaed %>%
+  mutate(control.zsp.density = 409702)
+smax_vaed
+
+##calculate relative change in prevalence
+smax_vaed=smax_vaed %>%
+  mutate(relative_zsp_density = ((total.zsp.density - control.zsp.density) / control.zsp.density) * 100)
+
+zsp.density.smax.vaed <- gam(relative_zsp_density ~ te(c_smax_transformed, v.coverage), data=smax_vaed, family="gaussian")
+
+color_palette <- rev(brewer.pal(9, "PRGn"))
+color_min <- -250
+color_max <- 250
+
+fvisgam(zsp.density.smax.vaed, view=c("c_smax_transformed", "v.coverage"), color = color_palette, main="Percent Change in Zoospore Density", 
+        ylab = "Percent Population Coverage", xlab = "Percent Decrease in Tolerance",add.color.legend = FALSE,hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+increasing establishment vs. coverage
+coverage levels: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100%
+harm-based efficacy levels: +10, +20, +30, +40, +50, +60, +70, +80, +90, +100% increase in baseline establishment
+increasing establishment vs. coverage infection intensity plot
+```{r setup, include=FALSE}
+est_vaed <- read.csv(file = '/Users/kmbarnett/Desktop/upload to github/abm data files /vaccine causes harm/increasing_establishment.csv')
+head(est_vaed)
+
+color_palette <- rev(brewer.pal(9, "PRGn"))
+color_min <- -125
+color_max <- 125
+     
+#transform raw efficacy values to more interpretable % changes in efficacy
+est_vaed <- est_vaed %>%
+  mutate(c_est_transformed = round(exp(c_est)-1, 2))
+
+est_vaed <- est_vaed%>%
+  mutate(c_est_transformed = c_est_transformed*100)
+
+est_vaed<- est_vaed %>%
+  mutate(v.coverage = v.coverage*100)
+
+est_vaed <- est_vaed %>%
+  mutate(control.inf_inten = 254.5)
+
+est_vaed=est_vaed %>%
+  mutate(relative_spn_median = ((median_spn_inten_metas - control.inf_inten) / (control.inf_inten)) * 100)
+
+m1 <- gam(relative_spn_median  ~ te(c_est_transformed, v.coverage), data=est_vaed, family="gaussian")
+
+inf_inten_c_est_vaed <- fvisgam(m1, view=c("c_est_transformed", "v.coverage"), color = color_palette, main="Percent Change in Infection Intensity", ylab = "Percent Population Coverage", xlab = "Percent Increase in Establishment",add.color.legend = FALSE,hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+increasing establishment vs. coverage population size plot
+```{r}
+
+est_vaed <- est_vaed %>%
+  mutate(control.count.average_1 = 147.5)
+
+est_vaed=est_vaed %>%
+  mutate(relative_metamorph_count1 = ((count.metamorphs - control.count.average_1) / (control.count.average_1)) * 100)
+
+meta_pop_size_est_vaed <- gam(relative_metamorph_count1 ~ te(c_est_transformed, v.coverage), data=est_vaed, family="gaussian")
+
+fvisgam(meta_pop_size_est_vaed, view=c("c_est_transformed", "v.coverage"), color = color_palette, main="Percent Change in Frog Population", 
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Establishment",add.color.legend = FALSE,hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+increasing establishment vs. coverage prevalence plot
+```{r}
+##populate a column with the control value in the dataset
+est_vaed <- est_vaed %>%
+  mutate(median_prev_control = 1)
+
+##calculate relative change in prevalence
+est_vaed=est_vaed %>%
+  mutate(relative_prev = ((metas_prev - median_prev_control) / (median_prev_control)) * 100)
+
+##make plot
+m_prev_vaed_est <- gam(relative_prev ~ te(c_est_transformed, v.coverage), data=est_vaed, family="gaussian")
+
+fvisgam(m_prev_vaed_est, view=c("c_est_transformed", "v.coverage"), color = color_palette, main="Percent Change in Infection Prevalence", 
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Establishment",add.color.legend = FALSE,hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```
+
+increasing establishment vs. coverage zoospore density plot
+```{r}
+
+##populate a column with that value in the dataset
+est_vaed <- est_vaed %>%
+  mutate(control.zsp.density = 409702)
+
+##calculate relative change in prevalence
+est_vaed=est_vaed %>%
+  mutate(relative_zsp_density = ((total.zsp.density - control.zsp.density) / control.zsp.density) * 100)
+
+color_palette <- rev(brewer.pal(9, "PRGn"))
+color_min <- -250
+color_max <- 250
+
+zsp.density.est.vaed <- gam(relative_zsp_density ~ te(c_est_transformed, v.coverage), data=est_vaed, family="gaussian")
+
+fvisgam(zsp.density.est.vaed, view=c("c_est_transformed", "v.coverage"), color = color_palette, main="Percent Change in Zoospore Density", 
+        ylab = "Percent Population Coverage", xlab = "Percent Increase in Establishment",add.color.legend = FALSE,hide.label = TRUE, n.seg=2, zlim = c(color_min, color_max))
+
+```

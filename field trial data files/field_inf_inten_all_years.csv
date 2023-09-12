@@ -1,0 +1,5 @@
+﻿treatment,time,bd_load,lower.CL,upper.CL,SE
+sham,after,5.22,2.31,8.12,1.481
+vaccine,after,6.2,3.3,9.09,1.475
+sham,before,6.28,4.7,7.86,0.805
+vaccine,before,5.42,3.79,7.05,0.831

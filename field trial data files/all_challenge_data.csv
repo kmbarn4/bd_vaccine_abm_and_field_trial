@@ -1,0 +1,717 @@
+frog,pond,swab1_mass,mort_status,swab2_mass,svl,treatment,swab1,swab2,bd_start,bd_end,year,pcr_plate_swab1,pcr_plate_swab2,lab,before.after,Exposure.Date,mortality.date,days_post_bd_death
+1,CA-PIG,0.43,0,0.4,18.5,sham,0,194,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+2,CA-PIG,0.47,0,0.41,19,sham,0,31633.9,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+3,CA-PIG,0.49,0,0.48,19,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+4,CA-PIG,0.45,0,0.4,19,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+5,CA-PIG,0.37,0,0.35,17,sham,0,7819,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+6,CA-PIG,0.53,0,0.43,18.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+7,CA-PIG,0.32,0,0.29,17,sham,0,20145.9,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+8,CA-PIG,0.46,0,0.46,20,sham,0,703,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+9,CA-PIG,0.49,0,0.32,17,sham,143.2,22352.2,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+10,CA-PIG,0.32,0,0.27,17.5,sham,0,2823.3,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+11,CA-PIG,0.55,0,0.53,20,sham,0,152,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+12,CA-PIG,0.4,0,0.36,19,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+13,CA-PIG,0.5,0,0.45,20,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+14,CA-PIG,0.38,0,0.31,17,sham,0,6433.4,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+15,CA-PIG,0.34,0,0.28,16.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+16,CA-PIG,0.42,0,0.3,15,sham,0,638,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+17,CA-PIG,0.36,0,0.3,16,sham,0,475,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+18,CA-PIG,0.31,0,0.28,18,sham,0.1,3241.9,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+19,CA-PIG,0.26,0,0.28,16,sham,0,2039.9,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+20,CA-PIG,0.26,0,0.2,19,sham,0,2678.5,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+21,CA-PIG,0.26,0,0.26,17,sham,0,40637.8,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+22,CA-PIG,0.3,0,0.28,15,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+23,CA-PIG,0.4,0,0.38,19,sham,0,8,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+24,CA-PIG,0.3,0,0.26,22,sham,1905.4,9771.6,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+25,CA-PIG,0.5,0,0.44,20,sham,0,98,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+26,CA-PIG,0.24,0,0.25,16,sham,6964.8,102854.6,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+27,CA-PIG,0.51,0,0.42,18,sham,177.2,6294.2,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+28,CA-PIG,0.4,0,0.35,17.5,sham,324.6,4,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+29,CA-PIG,0.23,0,0.18,15,sham,0,1484,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+30,CA-PIG,0.32,0,0.28,17.5,sham,961,19230.8,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+31,CA-PIG,0.36,0,0.28,17,sham,98.9,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+32,CA-PIG,0.3,0,0.26,17,sham,0,334,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+33,CA-PIG,0.22,1,0.26,NA,sham,65,1063,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/18/19,6
+34,CA-PIG,0.37,0,0.33,17,sham,82.8,2389,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+35,CA-PIG,0.35,0,0.27,18,sham,51.2,41329.6,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+36,CA-PIG,0.33,0,0.27,17,sham,11.7,983,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+37,CA-PIG,0.35,0,0.29,18,sham,4.9,1084,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+38,CA-PIG,0.53,0,0.42,19,sham,5045.9,82994.3,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+39,CA-PIG,0.32,0,0.29,21,sham,138.2,9031.2,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+40,CA-PIG,0.41,0,0.3,17,sham,0,6,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+41,GLORGCP,0.444,0,0.38,19,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+42,GLORGCP,0.441,0,0.37,21,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+43,GLORGCP,0.61,0,0.44,19.5,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+44,GLORGCP,0.384,0,0.35,16,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+45,GLORGCP,0.436,0,0.35,16.5,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+46,GLORGCP,0.571,0,0.34,18.5,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+47,GLORGCP,0.364,0,0.28,16.5,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+48,GLORGCP,0.512,0,0.47,19,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+49,GLORGCP,0.478,0,0.37,20,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+50,GLORGCP,0.491,0,0.44,19.5,vaccine,0,387021.8,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+51,GLORGCP,0.569,0,0.4,20,vaccine,683.1,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+52,GLORGCP,0.41,0,0.41,20,vaccine,0,29,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+53,GLORGCP,0.426,0,0.35,12,vaccine,79056.4,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+54,GLORGCP,0.383,0,0.36,13.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+55,GLORGCP,0.321,0,0.22,17,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+56,GLORGCP,0.474,0,0.29,17,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+57,GLORGCP,0.517,0,0.41,18.5,vaccine,56040.4,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+58,GLORGCP,0.454,0,0.37,13.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+59,GLORGCP,0.56,0,0.59,20,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+60,GLORGCP,0.412,0,0.29,18,vaccine,1835.7,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+61,GLORGCP,0.44,0,0.41,18.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+62,GLORGCP,0.33,0,0.23,17,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+63,GLORGCP,0.42,0,0.45,19,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+64,GLORGCP,0.42,0,0.37,17,vaccine,2481.7,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+65,GLORGCP,0.4,0,0.27,18,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+66,GLORGCP,0.43,0,0.38,18.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+67,GLORGCP,0.51,0,0.43,21,vaccine,101305,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+68,GLORGCP,0.46,0,0.45,19,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+69,GLORGCP,0.42,0,0.39,19,vaccine,7980,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+71,GLORGCP,0.55,0,0.4,18,vaccine,0,164,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+72,GLORGCP,0.42,0,0.41,18.5,vaccine,0,33,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+73,GLORGCP,0.43,0,0.36,20.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+74,GLORGCP,0.52,0,0.47,20.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+75,GLORGCP,0.56,0,0.4,20,vaccine,558,183,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+76,GLORGCP,0.5,0,0.42,18,vaccine,229,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+77,GLORGCP,0.45,0,0.41,17.5,vaccine,0,285,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+78,GLORGCP,0.45,0,0.31,15.5,vaccine,171,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+79,GLORGCP,0.57,0,0.49,20,vaccine,0,19,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+80,GLORGCP,0.41,0,0.29,19,vaccine,0,37,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+121,CA-MANZA,0.38,0,0.29,18,vaccine,14366,41906.9,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+122,CA-MANZA,0.36,0,0.26,17,vaccine,0,112676.6,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+123,CA-MANZA,0.37,0,0.36,17,vaccine,316,15072.6,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+124,CA-MANZA,0.32,0,0.33,17,vaccine,0,164580.9,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+125,CA-MANZA,0.27,0,0.21,15,vaccine,1441,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+126,CA-MANZA,0.33,0,0.25,17,vaccine,2395,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+127,CA-MANZA,0.21,0,0.26,16,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+128,CA-MANZA,0.47,0,0.33,19,vaccine,1137,172821.1,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+129,CA-MANZA,0.29,0,0.23,15,vaccine,11060,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+131,CA-MANZA,0.37,0,0.32,17,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+132,CA-MANZA,0.32,0,0.28,20,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+133,CA-MANZA,0.25,0,0.18,15,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+134,CA-MANZA,0.35,0,0.32,19,vaccine,0,19,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+135,CA-MANZA,0.49,0,0.37,19,vaccine,0,0.4,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+136,CA-MANZA,0.4,0,0.36,19,vaccine,0,113154.8,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+137,CA-MANZA,0.34,1,0.31,19,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/19/19,7
+138,CA-MANZA,0.16,0,0.17,14,vaccine,0,14757,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+139,CA-MANZA,0.41,0,0.35,17.5,vaccine,0,154300.1,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+140,CA-MANZA,0.26,0,0.29,17,vaccine,0,3,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+141,CA-MANZA,0.35,0,0.34,16.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+142,CA-MANZA,0.33,0,0.31,17,vaccine,0,882,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+143,CA-MANZA,0.31,0,0.21,15.5,vaccine,0,23,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+144,CA-MANZA,0.34,0,0.47,20,vaccine,0,9,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+145,CA-MANZA,0.29,0,0.25,18,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+146,CA-MANZA,0.31,0,0.25,16.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+147,CA-MANZA,0.35,0,0.33,18,vaccine,0,14,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+148,CA-MANZA,0.29,0,0.26,18,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+149,CA-MANZA,0.37,0,0.31,17,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+150,CA-MANZA,0.37,0,0.28,18,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+151,CA-MANZA,0.27,0,0.23,16.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+152,CA-MANZA,0.28,0,0.25,16,vaccine,0,23229.2,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+153,CA-MANZA,0.31,0,0.21,17,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+154,CA-MANZA,0.36,0,0.35,20,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+155,CA-MANZA,0.44,0,0.33,18,vaccine,0,22858.4,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+156,CA-MANZA,0.32,0,0.29,16.5,vaccine,0,14,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+157,CA-MANZA,0.29,0,0.22,14,vaccine,1228,0,1,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+158,CA-MANZA,0.32,0,0.26,15,vaccine,153,45,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+159,CA-MANZA,0.22,0,0.25,17,vaccine,0,364,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+160,CA-MANZA,0.29,0,0.21,17,vaccine,9207,564,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+161,NTALKGCP,0.58,0,0.48,20.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+162,NTALKGCP,0.62,0,0.62,22,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+163,NTALKGCP,0.82,0,0.81,17.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+164,NTALKGCP,0.8,0,0.79,22,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+165,NTALKGCP,0.71,0,0.96,23,sham,0,40,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+166,NTALKGCP,0.57,0,0.5,19,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+167,NTALKGCP,0.83,0,0.8,26,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+168,NTALKGCP,0.62,0,0.58,21,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+171,NTALKGCP,0.63,0,0.8,26,sham,0,69,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+172,NTALKGCP,0.44,0,0.38,17,sham,0,114,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+173,NTALKGCP,0.38,0,0.37,19,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+174,NTALKGCP,0.49,0,0.39,19,sham,54.6,158,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+175,NTALKGCP,0.69,0,0.82,19,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+176,NTALKGCP,0.42,0,0.34,16,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+177,NTALKGCP,0.85,0,0.66,21.5,sham,0,1703,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+178,NTALKGCP,0.62,0,0.62,21,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+179,NTALKGCP,0.78,0,0.75,21.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+181,NTALKGCP,0.86,0,0.85,24,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+182,NTALKGCP,0.56,0,0.5,20.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+183,NTALKGCP,0.68,0,0.59,20,sham,0,1023,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+184,NTALKGCP,0.56,0,0.58,18,sham,132.7,1831,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+185,NTALKGCP,0.56,0,0.47,19.5,sham,0,27334.1,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+186,NTALKGCP,0.66,0,0.7,21,sham,0,76,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+187,NTALKGCP,0.67,0,0.53,20,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+188,NTALKGCP,0.85,0,0.78,23,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+189,NTALKGCP,0.81,0,0.61,21,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+190,NTALKGCP,0.75,0,0.85,24,sham,0,72,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+191,NTALKGCP,0.79,0,0.78,22,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+192,NTALKGCP,0.36,0,0.28,17,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+193,NTALKGCP,0.72,0,0.72,21,sham,0,23,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+194,NTALKGCP,0.8,0,0.67,21,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+195,NTALKGCP,0.69,0,0.77,22,sham,0,8010,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+196,NTALKGCP,0.8,0,0.62,23,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+197,NTALKGCP,0.77,0,0.67,22,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+198,NTALKGCP,0.64,0,0.55,23,sham,0,1256,0,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+199,NTALKGCP,0.75,0,0.74,22.5,sham,510.8,1677,1,1,2019,NA,NA,mcmahon,before,7/12/19,7/22/19,10
+241,YBBA,0.48,0,0.36,16,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+242,YBBA,0.26,0,0.24,9,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+243,YBBA,0.38,0,0.36,12,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+245,YBBA,0.26,1,0.27,17,sham,0,205,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/25/19,6
+246,YBBA,0.38,0,0.27,17,sham,16004,0,1,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+247,YBBA,0.4,1,0.43,NA,sham,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/19/19,7/20/19,1
+248,YBBA,0.27,0,0.26,11,sham,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+249,YBBA,0.26,0,0.2,19,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+250,YBBA,0.05,0,0.5,13,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+251,YBBA,0.44,0,0.39,18,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+252,YBBA,0.4,NA,NA,NA,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,NA,NA
+253,YBBA,0.26,0,0.29,19,sham,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+254,YBBA,0.23,1,0.22,18,sham,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/19/19,7/24/19,5
+255,YBBA,0.42,0,0.33,11,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+256,YBBA,0.48,0,0.41,17,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+257,YBBA,0.45,0,0.48,18,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+258,YBBA,0.33,0,0.3,12,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+259,YBBA,0.26,1,0.27,16.5,sham,0,69186,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/25/19,6
+260,YBBA,0.36,0,0.27,16.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+261,YBBA,0.45,0,0.38,18,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+262,YBBA,0.44,0,0.38,13,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+263,YBBA,0.18,0,0.19,8,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+264,YBBA,0.54,0,0.5,13,sham,0,4937,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+265,YBBA,0.53,0,1,17,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+266,YBBA,0.19,0,0.12,8,sham,31935,0,1,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+267,YBBA,0.28,1,0.24,15,sham,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/19/19,7/23/19,4
+268,YBBA,0.39,0,0.37,12,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+270,YBBA,0.42,0,0.46,18,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+271,YBBA,0.37,0,0.33,12,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+272,YBBA,0.25,1,0.2,17,sham,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/19/19,7/23/19,4
+273,YBBA,0.85,1,0.94,23,sham,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/19/19,7/22/19,3
+274,YBBA,0.34,0,0.33,12,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+275,YBBA,0.28,1,0.29,21,sham,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/19/19,7/20/19,1
+276,YBBA,0.49,0,0.42,19,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+277,YBBA,0.51,0,0.44,19,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+278,YBBA,0.53,0,0.4,18,sham,0,6,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+279,YBBA,0.22,0,0.2,9,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+280,YBBA,0.42,0,0.36,19.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+281,YBBA,0.34,1,0.44,16,sham,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/19/19,7/24/19,5
+282,YBBA,0.32,0,0.23,11,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+283,YBBA,0.4,0,0.35,17,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+284,YBBA,0.3,0,0.26,10.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+285,HERONGCP,0.66,0,0.7,16,vaccine,49589.4,0,1,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+286,HERONGCP,0.44,0,0.39,17,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/19/19,7/31/19,12
+287,HERONGCP,0.42,0,0.42,21.5,vaccine,0,38,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+288,HERONGCP,0.65,0,0.52,15,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+289,HERONGCP,1.16,0,1.28,29,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+290,HERONGCP,0.56,0,0.53,20.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+291,HERONGCP,0.59,0,0.57,20,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+292,HERONGCP,0.45,0,0.41,20,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+293,HERONGCP,0.46,0,0.35,18,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+294,HERONGCP,0.41,0,0.36,15,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+295,HERONGCP,1.85,0,1.62,23,vaccine,0,21,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+296,HERONGCP,0.38,0,0.32,18,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+297,HERONGCP,0.89,0,0.87,18,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+298,HERONGCP,1.17,0,1.01,23,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+299,HERONGCP,0.45,0,0.49,18,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+300,HERONGCP,0.63,0,0.48,19.5,vaccine,0,113845.4,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+301,HERONGCP,1.02,0,0.99,18,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+302,HERONGCP,0.68,0,0.62,21.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+303,HERONGCP,0.7,0,0.61,15,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+304,HERONGCP,0.49,0,0.42,19.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+305,HERONGCP,0.58,0,0.56,21,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+306,HERONGCP,0.97,0,0.97,24,vaccine,400.5,0,1,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+307,HERONGCP,0.98,0,0.98,18,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+308,HERONGCP,0.92,0,0.88,23,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+309,HERONGCP,0.73,0,0.63,24,vaccine,0,79,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+310,HERONGCP,0.71,0,0.62,16,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+311,HERONGCP,0.69,0,0.56,22,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+312,HERONGCP,0.84,0,0.79,23,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+313,HERONGCP,0.77,0,0.73,22,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+314,HERONGCP,0.34,0,0.28,11,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+315,HERONGCP,0.8,0,0.71,16,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+316,HERONGCP,1.3,0,1.25,25,vaccine,0,100,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+317,HERONGCP,1.84,0,1.87,29.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+318,HERONGCP,0.78,0,0.83,17,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+319,HERONGCP,0.94,0,0.91,23,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+320,HERONGCP,0.64,0,0.57,21,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+321,HERONGCP,0.63,0,0.67,15,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+322,HERONGCP,0.73,0,0.64,23,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+323,HERONGCP,0.59,0,0.66,24,vaccine,617.9,3917.9,1,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+324,HERONGCP,0.75,0,0.78,21,vaccine,0,11621.3,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+325,HERONGCP,0.57,0,0.48,14,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+326,HERONGCP,1.22,0,1.11,26,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+327,HERONGCP,0.67,0,0.54,22,vaccine,0,2,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+328,NORTHGCP,0.75,0,0.59,23,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+329,NORTHGCP,0.77,0,0.71,21.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+330,NORTHGCP,0.53,0,0.49,19.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+331,NORTHGCP,1.06,0,0.98,20.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+332,NORTHGCP,1.55,0,1.5,28,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+333,NORTHGCP,1.1,0,1.06,20,vaccine,0,39,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+334,NORTHGCP,0.66,0,0.59,15,vaccine,1153.1,801,1,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+335,NORTHGCP,0.91,0,0.92,25,vaccine,1170.9,393.5,1,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+336,NORTHGCP,0.46,0,0.48,18,vaccine,0,42,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+337,NORTHGCP,1.11,0,0.93,23,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+338,NORTHGCP,1.11,0,0.89,21.5,vaccine,0,17,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+339,NORTHGCP,0.98,0,0.81,24,vaccine,0,70.8,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+340,NORTHGCP,0.82,0,0.72,16,vaccine,0,43,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+341,NORTHGCP,0.79,0,0.68,21,vaccine,0,48,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+342,NORTHGCP,0.85,0,0.76,24,vaccine,0,15,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+343,NORTHGCP,0.94,0,0.94,19,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+344,NORTHGCP,0.68,0,0.51,20.5,vaccine,0,22,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+345,NORTHGCP,1.32,0,1.19,25,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+346,NORTHGCP,0.45,0,0.39,19,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+347,NORTHGCP,1.14,0,1.07,28,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+348,NORTHGCP,1.25,0,1.22,27,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+349,NORTHGCP,1.1,0,1.13,26,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+350,NORTHGCP,0.36,0,0.28,15,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+351,NORTHGCP,1.07,0,0.95,26,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+352,NORTHGCP,0.82,0,0.76,25,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+353,NORTHGCP,0.84,0,0.76,25,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+354,NORTHGCP,1.03,0,0.88,26,vaccine,0,29,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+355,NORTHGCP,0.8,0,0.66,22,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+356,NORTHGCP,1.06,0,0.92,24,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+357,NORTHGCP,1.17,0,0.97,24,vaccine,0,29,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+358,NORTHGCP,0.68,0,0.5,18.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+359,NORTHGCP,1.39,0,1.25,26,vaccine,0,51,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+360,NORTHGCP,1.11,0,1.06,26,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+361,NORTHGCP,0.95,0,0.7,23,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+362,NORTHGCP,1.04,0,0.91,24,vaccine,0,6,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+363,NORTHGCP,1.09,0,0.98,26,vaccine,72009.5,43,1,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+364,NORTHGCP,0.89,0,0.82,18,vaccine,211,0,1,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+365,NORTHGCP,1.36,0,1.14,29,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+366,NORTHGCP,0.73,0,0.69,22,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+367,NORTHGCP,0.77,0,0.79,23,vaccine,34325.6,0,1,0,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+368,NORTHGCP,0.99,0,0.83,26,vaccine,0,5,0,1,2019,NA,NA,mcmahon,before,7/19/19,7/29/19,10
+409,UCTBOR,0.7,1,0.65,23,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,7/28/19,2
+410,UCTBOR,0.64,0,0.57,19.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,8/5/19,10
+411,UCTBOR,0.75,1,0.71,22,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,7/29/19,3
+412,UCTBOR,0.89,1,0.83,22,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,7/29/19,3
+413,UCTBOR,0.83,0,0.74,22.5,vaccine,0,2701.2,0,1,2019,NA,NA,mcmahon,before,7/26/19,8/5/19,10
+414,UCTBOR,0.75,0,0.77,21,vaccine,1700.5,0,1,0,2019,NA,NA,mcmahon,before,7/26/19,8/5/19,10
+415,UCTBOR,0.66,0,0.58,20,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,8/5/19,10
+416,UCTBOR,0.6,1,0.54,20,vaccine,3732.1,0,1,0,2019,NA,NA,mcmahon,before,7/26/19,7/28/19,2
+417,UCTBOR,0.44,0,0.42,18,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,8/5/19,10
+418,UCTBOR,0.71,1,0.74,23,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,7/28/19,2
+419,UCTBOR,0.6,0,0.5,19,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,8/5/19,10
+420,UCTBOR,0.49,1,0.49,23,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,7/28/19,2
+421,UCTBOR,0.43,0,0.35,17,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,8/5/19,10
+422,UCTBOR,0.54,0,0.51,19,vaccine,9173.2,0,1,0,2019,NA,NA,mcmahon,before,7/26/19,8/5/19,10
+423,UCTBOR,0.41,1,0.41,17,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,7/27/19,1
+424,UCTBOR,0.71,1,0.7,20,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,7/30/19,4
+425,UCTBOR,0.53,1,0.5,17.5,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,7/31/19,5
+426,UCTBOR,0.67,1,0.64,21.5,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,7/27/19,1
+427,UCTBOR,0.69,1,0.64,20.5,vaccine,0,744390.9,0,1,2019,NA,NA,mcmahon,before,7/26/19,7/29/19,3
+428,UCTBOR,0.62,0,0.51,19.5,vaccine,0,6,0,1,2019,NA,NA,mcmahon,before,7/26/19,8/5/19,10
+429,UCTBOR,0.29,1,0.26,16,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,7/28/19,2
+430,UCTBOR,0.3,1,0.3,17,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,7/31/19,5
+431,UCTBOR,0.47,1,0.44,19,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,7/28/19,2
+432,UCTBOR,0.48,1,0.44,19,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,7/28/19,2
+433,UCTBOR,0.77,1,0.73,21,vaccine,127.2,9536.7,1,1,2019,NA,NA,mcmahon,before,7/26/19,7/30/19,4
+434,UCTBOR,0.64,1,0.62,20,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,7/28/19,2
+435,UCTBOR,0.66,1,0.61,23.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,7/28/19,2
+436,UCTBOR,0.52,1,0.48,21,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,7/29/19,3
+437,UCTBOR,0.49,0,0.43,18,vaccine,0,175246.8,0,1,2019,NA,NA,mcmahon,before,7/26/19,8/5/19,10
+438,UCTBOR,0.64,1,0.58,22,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,7/28/19,2
+439,UCTBOR,0.6,0,0.53,20,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,8/5/19,10
+440,UCTBOR,0.7,0,0.59,22,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,8/5/19,10
+441,UCTBOR,0.62,0,1.38,22,vaccine,6537.9,0,1,0,2019,NA,NA,mcmahon,before,7/26/19,8/5/19,10
+442,UCTBOR,0.69,1,0.54,22,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,8/2/19,7
+443,UCTBOR,0.61,1,0.61,21,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,8/2/19,7
+444,UCTBOR,0.61,1,0.61,21,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,7/28/19,2
+445,UCTBOR,0.49,1,0.57,22.5,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,7/28/19,2
+446,UCTBOR,0.64,1,0.6,21.5,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/26/19,7/28/19,2
+447,UCTBOR,0.79,1,0.7,23,vaccine,0,0,0,0,2019,NA,NA,mcmahon,before,7/26/19,7/30/19,4
+628,GRAMPBOR,0.37,0,0.32,16,sham,0,3463,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+629,GRAMPBOR,0.21,0,0.16,14,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+630,GRAMPBOR,0.2,0,0.19,15,sham,0,32427.2,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+631,GRAMPBOR,0.26,0,0.21,14,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+632,GRAMPBOR,0.35,0,0.26,16,sham,0,50769.9,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+633,GRAMPBOR,0.3,0,0.27,15,sham,0,58793.2,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+634,GRAMPBOR,0.25,0,0.19,14,sham,32492,35749.7,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+635,GRAMPBOR,0.3,0,0.22,16,sham,0,86040.2,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+636,GRAMPBOR,0.47,0,0.21,16.5,sham,8713.2,0,1,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+637,GRAMPBOR,0.23,0,0.17,14,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+638,GRAMPBOR,0.19,0,0.18,13,sham,0,104660.1,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+639,GRAMPBOR,0.24,0,0.19,15,sham,0,87824.2,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+640,GRAMPBOR,0.33,0,0.24,16,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+641,GRAMPBOR,0.27,0,0.19,15,sham,2544.3,2728,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+642,GRAMPBOR,0.33,0,0.28,16,sham,450.9,0,1,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+643,GRAMPBOR,0.3,0,0.31,16.5,sham,0,14525.8,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+644,GRAMPBOR,0.27,0,0.23,15,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+645,GRAMPBOR,0.26,0,0.21,15,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+646,GRAMPBOR,0.21,0,0.15,16,sham,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/30/19,8/8/19,9
+647,GRAMPBOR,0.19,1,0.15,13.5,sham,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/30/19,8/6/19,7
+648,GRAMPBOR,0.24,0,0.19,14,sham,0,38114.6,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+649,GRAMPBOR,0.3,0,0.24,15,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+650,GRAMPBOR,0.23,0,0.2,14,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+651,GRAMPBOR,0.3,0,0.22,15,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+652,GRAMPBOR,0.22,0,0.18,15,sham,0,31632.4,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+653,GRAMPBOR,0.27,0,0.23,14,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+654,GRAMPBOR,0.16,0,0.12,13,sham,2959.9,14707.3,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+655,GRAMPBOR,0.22,0,0.18,14.5,sham,2469.4,138699.4,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+656,GRAMPBOR,0.3,0,0.24,15,sham,0,41062.1,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+657,GRAMPBOR,0.41,0,0.29,17,sham,0,5013.6,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+658,GRAMPBOR,0.29,0,0.19,15.5,sham,0,13577.8,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+659,GRAMPBOR,0.34,0,0.24,15,sham,0,18223.4,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+660,GRAMPBOR,0.43,0,0.43,18,sham,0,113352.4,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+661,GRAMPBOR,0.33,0,0.28,17,sham,488.6,83271.2,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+662,GRAMPBOR,0.31,0,0.26,16.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+663,GRAMPBOR,0.29,0,0.26,16,sham,1216.9,603,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+664,GRAMPBOR,0.29,0,0.21,15,sham,2757.2,39,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+665,GRAMPBOR,0.27,0,0.23,16,sham,5788.9,18809.8,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+666,GRAMPBOR,0.28,0,0.23,15.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+667,GRAMPBOR,0.25,0,0.19,14,sham,0,1,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+668,GRAMPBOR,0.37,0,0.32,17,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+669,GRAMPBOR,0.38,0,0.25,16,sham,9151.9,3701.2,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+670,GRAMPBOR,0.18,0,0.13,13,sham,0,35,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+671,GRAMPBOR,0.27,0,0.22,15,sham,0,67,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+672,GRAMPBOR,0.28,0,0.26,16,sham,4082.8,3,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+673,GRAMPBOR,0.37,0,0.29,16,sham,8250.4,0,1,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+674,GRAMPBOR,0.27,0,0.18,15,sham,1274.7,15172,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+675,GRAMPBOR,0.32,0,0.24,16.5,sham,464,909,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+676,GRAMPBOR,0.39,0,0.35,17.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+677,GRAMPBOR,0.26,0,0.18,15,sham,0,78,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+678,CABINBOR,0.33,0,0.26,16,sham,579.5,743,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+679,CABINBOR,0.4,0,0.44,19,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+680,CABINBOR,0.48,0,0.44,18,sham,1211.4,217,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+681,CABINBOR,0.49,0,0.44,19,sham,10942.6,0,1,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+682,CABINBOR,0.31,1,0.23,14,sham,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/30/19,8/1/19,2
+683,CABINBOR,0.31,0,0.34,17,sham,0,311,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+684,CABINBOR,0.31,0,0.25,16,sham,0,642,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+685,CABINBOR,0.27,0,0.2,15,sham,0,67,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+686,CABINBOR,0.37,0,0.31,18,sham,0,31,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+687,CABINBOR,0.5,0,0.48,18.5,sham,0,7398.6,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+688,CABINBOR,0.47,0,0.39,18.5,sham,0,11344.9,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+689,CABINBOR,0.48,0,0.44,20,sham,0,13,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+690,CABINBOR,0.35,0,0.34,19,sham,0,1032,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+691,CABINBOR,0.43,0,0.27,18.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+692,CABINBOR,0.44,0,0.4,18.5,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+693,CABINBOR,0.19,0,0.17,15,sham,0,835.4,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+694,CABINBOR,0.44,0,0.35,19,sham,0,5139.6,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+695,CABINBOR,0.39,0,0.37,17,sham,0,1906.8,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+696,CABINBOR,0.71,0,0.59,21,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+697,CABINBOR,0.47,0,0.44,18,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+698,CABINBOR,0.44,0,0.32,17,sham,0,881,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+699,CABINBOR,0.23,0,0.22,14.5,sham,0,1813,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+700,CABINBOR,0.55,0,0.49,23,sham,0,28,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+701,CABINBOR,0.21,1,0.18,11.5,sham,0,156,0,1,2019,NA,NA,mcmahon,before,7/30/19,7/29/19,-1
+702,CABINBOR,0.42,0,0.32,18,sham,0,275,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+703,CABINBOR,0.59,1,0.54,20,sham,0,18434.4,0,1,2019,NA,NA,mcmahon,before,7/30/19,7/30/19,0
+704,CABINBOR,0.52,0,0.53,20,sham,0,2715.6,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+705,CABINBOR,0.26,0,0.22,15,sham,0,0,0,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+706,CABINBOR,0.51,0,0.46,17,sham,703.1,9594.3,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+707,CABINBOR,0.4,0,0.37,17,sham,1638.4,0,1,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+708,CABINBOR,0.49,0,0.42,18,sham,22615.8,13566.7,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+709,CABINBOR,0.28,0,0.29,16,sham,2665.8,0,1,0,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+710,CABINBOR,0.27,1,0.24,16,sham,3764.3,6849.6,1,1,2019,NA,NA,mcmahon,before,7/30/19,7/30/19,0
+711,CABINBOR,0.39,0,0.32,17,sham,72097.6,102,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+712,CABINBOR,0.63,0,0.54,18,sham,0,2336.9,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+713,PPKBOR,0.38,0,0.26,17,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+714,PPKBOR,0.39,0,0.35,17,vaccine,NA,NA,NA,NA,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+715,PPKBOR,0.36,0,0.35,16,vaccine,4734.8,7809,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+716,PPKBOR,0.37,0,0.36,19,vaccine,1081.3,13905.8,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+717,PPKBOR,0.43,0,0.37,17,vaccine,277.1,97718.1,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+718,PPKBOR,0.35,0,0.3,18,vaccine,758.5,27797.1,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+719,PPKBOR,0.33,1,0.4,19,vaccine,696.4,8,1,1,2019,NA,NA,mcmahon,before,7/30/19,7/29/19,-1
+720,PPKBOR,0.38,0,0.25,17.5,vaccine,1630.4,7052,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+721,PPKBOR,0.46,0,0.38,17,vaccine,1158.7,1010,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+722,PPKBOR,0.4,0,0.3,16.5,vaccine,0,40017.1,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+723,PPKBOR,0.33,0,0.34,19,vaccine,6625.8,483,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+724,PPKBOR,0.33,0,0.22,15,vaccine,118.2,359,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+725,PPKBOR,0.43,0,0.45,20,vaccine,338.7,10452.9,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+726,PPKBOR,0.33,0,0.23,17,vaccine,220.1,426,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+727,PPKBOR,0.33,0,0.23,16.5,vaccine,0,67.4,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+728,PPKBOR,0.33,0,0.26,16,vaccine,5976.8,3960.8,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+729,PPKBOR,0.36,0,0.34,17,vaccine,2420.6,8695.8,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+730,PPKBOR,0.43,0,0.32,18,vaccine,573.2,11832,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+731,PPKBOR,0.3,0,0.21,15,vaccine,34194.1,14169.5,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+732,PPKBOR,0.35,0,0.25,16.5,vaccine,701.1,8086.7,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+733,PPKBOR,0.46,0,0.34,18.5,vaccine,0,1043,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+734,PPKBOR,0.34,0,0.26,16,vaccine,220.9,7208.5,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+735,PPKBOR,0.56,0,0.43,18,vaccine,0,1145,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+736,PPKBOR,0.43,0,0.38,18,vaccine,0,316,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+737,PPKBOR,0.44,0,0.3,NA,vaccine,90.2,969,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+738,PPKBOR,0.36,0,0.24,17,vaccine,0,115,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+739,PPKBOR,0.46,0,0.39,19,vaccine,85.7,163878.8,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+740,PPKBOR,0.34,0,0.26,16,vaccine,123.6,17,1,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+741,PPKBOR,0.48,0,0.35,20,vaccine,0,1202,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+742,PPKBOR,0.45,0,0.34,18,vaccine,0,54,0,1,2019,NA,NA,mcmahon,before,7/30/19,8/9/19,10
+822,NORTHGCP,0.404,0,0.473,18.76,vaccine,0,3850.8,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+824,NORTHGCP,0.391,0,0.52,19.66,vaccine,0,761.8,0,1,2022,Plate 44,Plate 51,Rohr,after,6/20/22,6/30/22,10
+825,HERONGCP,0.354,0,0.545,19.22,vaccine,0,1941.5,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+827,NORTHGCP,0.457,0,0.528,18.81,vaccine,0,20418.3,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+828,NORTHGCP,0.558,0,0.68,21.45,vaccine,0,1359.7,0,1,2022,Plate 44,Plate 54,Rohr,after,6/23/22,7/3/22,10
+829,NORTHGCP,0.445,0,0.557,21.16,vaccine,0,3477.3,0,1,2022,Plate 44,Plate 51,Rohr,after,6/20/22,6/30/22,10
+830,HERONGCP,0.355,0,0.483,18.61,vaccine,0,0,0,0,2022,Plate 44,Plate 54,Rohr,after,6/23/22,7/3/22,10
+831,HERONGCP,0.312,0,0.419,17.58,vaccine,0,34906,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+832,NORTHGCP,0.404,0,0.546,19.16,vaccine,0,568.9,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+833,NORTHGCP,0.469,0,0.568,19.34,vaccine,372.3,25.5,1,1,2022,Plate 44,Plate 54,Rohr,after,6/23/22,7/3/22,10
+834,NORTHGCP,0.42,0,0.49,18.71,vaccine,0,4668.2,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+835,NORTHGCP,0.311,0,0.336,16.62,vaccine,0,38391.1,0,1,2022,Plate 44,Plate 54,Rohr,after,6/23/22,7/3/22,10
+836,NORTHGCP,0.347,0,0.334,17.38,vaccine,0,7045.5,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+837,HERONGCP,0.338,0,0.339,16.83,vaccine,0,60241.1,0,1,2022,Plate 44,Plate 54,Rohr,after,6/23/22,7/3/22,10
+839,NORTHGCP,0.48,0,0.5,20.79,vaccine,0,8528,0,1,2022,Plate 44,Plate 51,Rohr,after,6/20/22,6/30/22,10
+841,NORTHGCP,0.407,0,0.537,19.01,vaccine,0,8600.9,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+843,NORTHGCP,0.292,0,0.359,17.32,vaccine,0,1143.1,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+845,HERONGCP,0.46,0,0.476,20.51,vaccine,0,0,0,0,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+846,NORTHGCP,0.397,0,0.579,19.86,vaccine,0,12135.6,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+849,HERONGCP,0.283,0,0.494,18.82,vaccine,0,3734.6,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+851,HERONGCP,0.473,0,0.511,20.82,vaccine,0,20237.5,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+853,HERONGCP,0.302,0,0.311,17.07,vaccine,0,3589.4,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+855,HERONGCP,0.327,0,0.327,19.72,vaccine,0,6824.4,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+856,CA-PIG,0.653,0,1.018,22.42,sham,0,4093.4,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+857,CA-PIG,0.533,0,0.683,20.81,sham,0,10811.6,0,1,2022,Plate 44,Plate 54,Rohr,after,6/23/22,7/3/22,10
+858,CA-PIG,0.404,0,0.521,20.6,sham,0,0,0,0,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+860,CA-PIG,0.671,0,0.677,21.47,sham,0,7558.7,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+862,CA-PIG,0.497,0,0.657,20.58,sham,323.5,138,1,1,2022,Plate 44,Plate 51,Rohr,after,6/20/22,6/30/22,10
+864,CA-PIG,0.524,0,0.621,20.43,sham,0,139.4,0,1,2022,Plate 44,Plate 51,Rohr,after,6/20/22,6/30/22,10
+866,CA-PIG,0.521,0,0.493,19.9,sham,0,1650.4,0,1,2022,Plate 44,Plate 51,Rohr,after,6/20/22,6/30/22,10
+867,CA-PIG,0.437,0,0.448,18.17,sham,0,3761.1,0,1,2022,Plate 44,Plate 54,Rohr,after,6/23/22,7/3/22,10
+868,CA-PIG,0.595,0,0.613,20.78,sham,0,605210,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+869,CA-PIG,0.465,0,0.503,18.85,sham,0,463.8,0,1,2022,Plate 44,Plate 54,Rohr,after,6/23/22,7/3/22,10
+870,CA-PIG,0.489,0,0.53,20.52,sham,0,0,0,0,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+872,CA-PIG,0.76,0,0.608,20.93,sham,0,4527.1,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+874,CA-PIG,0.428,0,0.451,19.1,sham,0,629.1,0,1,2022,Plate 44,Plate 51,Rohr,after,6/20/22,6/30/22,10
+876,HERONGCP,0.373,0,0.443,19.63,vaccine,0,642931.9,0,1,2022,Plate 44,Plate 51,Rohr,after,6/20/22,6/30/22,10
+881,CA-PIG,0.391,0,0.587,19.06,sham,0,2916.3,0,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+883,CA-PIG,0.477,0,0.565,19.72,sham,0,2324.4,0,1,2022,Plate 44,Plate 51,Rohr,after,6/20/22,6/30/22,10
+885,CA-PIG,0.417,0,0.39,19.33,sham,0,10891,0,1,2022,Plate 44,Plate 51,Rohr,after,6/20/22,6/30/22,10
+886,CA-PIG,0.601,0,0.569,20.76,sham,0,142212.9,0,1,2022,Plate 44,Plate 54,Rohr,after,6/23/22,7/3/22,10
+887,CA-PIG,0.513,0,0.544,19.74,sham,0,1809.6,0,1,2022,Plate 44,Plate 51,Rohr,after,6/20/22,6/30/22,10
+888,CA-PIG,0.438,0,0.593,18.81,sham,0,4951.6,0,1,2022,Plate 45,Plate 54,Rohr,after,6/23/22,7/3/22,10
+889,CA-PIG,0.427,0,0.505,19.33,sham,NA,0,NA,0,2022,NA,Plate 51,Rohr,after,6/20/22,6/30/22,10
+891,CA-PIG,0.618,0,0.958,22.56,sham,2327,38316.7,1,1,2022,Plate 45,Plate 52,Rohr,after,6/20/22,6/30/22,10
+893,CA-PIG,0.475,0,0.598,21.15,sham,207.4,241.9,1,1,2022,Plate 45,Plate 51,Rohr,after,6/20/22,6/30/22,10
+894,CA-PIG,0.587,0,0.579,20.92,sham,0,1908.5,0,1,2022,Plate 45,Plate 54,Rohr,after,6/23/22,7/3/22,10
+895,CA-PIG,0.563,0,0.683,21.05,sham,0,4810.7,0,1,2022,Plate 45,Plate 52,Rohr,after,6/20/22,6/30/22,10
+896,CA-PIG,0.469,0,0.494,19.12,sham,NA,NA,NA,NA,2022,NA,NA,Rohr,after,6/23/22,7/3/22,10
+897,CA-PIG,0.611,0,0.613,21.31,sham,47,NA,1,NA,2022,Plate 45,Plate 52,Rohr,after,6/20/22,6/30/22,10
+898,CA-PIG,0.576,0,0.704,21.84,sham,0,NA,0,NA,2022,Plate 45,Plate 54,Rohr,after,6/23/22,7/3/22,10
+899,CA-PIG,0.295,0,0.387,18.44,sham,0,207803.5,0,1,2022,Plate 45,Plate 52,Rohr,after,6/20/22,6/30/22,10
+901,CA-PIG,0.468,0,0.538,18.32,sham,364.1,5920.1,1,1,2022,Plate 45,Plate 52,Rohr,after,6/20/22,6/30/22,10
+903,HERONGCP,0.338,0,0.531,18.27,vaccine,446.1,295787.5,1,1,2022,Plate 45,Plate 52,Rohr,after,6/20/22,6/30/22,10
+904,HERONGCP,0.273,0,0.31,18.1,vaccine,NA,NA,NA,NA,2022,NA,NA,Rohr,after,6/23/22,7/3/22,10
+905,HERONGCP,0.353,0,0.459,19.13,vaccine,0,NA,0,NA,2022,Plate 45,Plate 51,Rohr,after,6/20/22,6/30/22,10
+906,HERONGCP,0.388,0,0.361,17.37,vaccine,0,NA,0,NA,2022,Plate 45,Plate 54,Rohr,after,6/23/22,7/3/22,10
+907,HERONGCP,0.444,0,0.653,19.13,vaccine,0,10573.4,0,1,2022,Plate 45,Plate 52,Rohr,after,6/20/22,6/30/22,10
+909,HERONGCP,0.424,0,0.55,18.77,vaccine,0,87691.5,0,1,2022,Plate 45,Plate 52,Rohr,after,6/20/22,6/30/22,10
+910,HERONGCP,0.403,0,0.574,19.59,vaccine,289.8,0,1,0,2022,Plate 45,Plate 54,Rohr,after,6/23/22,7/3/22,10
+911,HERONGCP,0.448,0,0.505,18.89,vaccine,1020.5,44275.6,1,1,2022,Plate 45,Plate 52,Rohr,after,6/20/22,6/30/22,10
+912,HERONGCP,0.406,0,0.497,19.41,vaccine,0,892.6,0,1,2022,Plate 45,Plate 54,Rohr,after,6/23/22,7/3/22,10
+913,HERONGCP,0.337,0,0.454,16.1,vaccine,0,13456.3,0,1,2022,Plate 45,Plate 51,Rohr,after,6/20/22,6/30/22,10
+915,HERONGCP,0.435,0,0.601,20.52,vaccine,521.3,11918.3,1,1,2022,Plate 45,Plate 51,Rohr,after,6/20/22,6/30/22,10
+917,HERONGCP,0.325,0,0.427,17.09,vaccine,148.8,2190.7,1,1,2022,Plate 45,Plate 52,Rohr,after,6/20/22,6/30/22,10
+918,HERONGCP,0.407,0,0.362,18.58,vaccine,124.6,3990.6,1,1,2022,Plate 45,Plate 54,Rohr,after,6/23/22,7/3/22,10
+919,HERONGCP,0.439,0,0.485,19.78,vaccine,0,81014.4,0,1,2022,Plate 45,Plate 52,Rohr,after,6/20/22,6/30/22,10
+921,HERONGCP,0.335,0,0.441,18.08,vaccine,0,6032.5,0,1,2022,Plate 45,Plate 52,Rohr,after,6/20/22,6/30/22,10
+922,HERONGCP,0.338,0,0.397,18.58,vaccine,0,142.4,0,1,2022,Plate 45,Plate 54,Rohr,after,6/23/22,7/3/22,10
+923,HERONGCP,0.297,0,0.339,16.94,vaccine,0,4072.9,0,1,2022,Plate 45,Plate 51,Rohr,after,6/20/22,6/30/22,10
+925,HERONGCP,0.413,0,0.491,19.49,vaccine,329.9,144164.6,1,1,2022,Plate 45,Plate 51,Rohr,after,6/20/22,6/30/22,10
+926,HERONGCP,0.437,0,0.362,17.96,vaccine,0,569.6,0,1,2022,Plate 45,Plate 54,Rohr,after,6/23/22,7/3/22,10
+933,NORTHGCP,0.382,0,0.362,18.04,vaccine,0,5988.6,0,1,2022,Plate 44,Plate 51,Rohr,after,6/20/22,6/30/22,10
+934,NORTHGCP,0.421,0,0.428,17.7,vaccine,0,3906.3,0,1,2022,Plate 44,Plate 54,Rohr,after,6/23/22,7/3/22,10
+935,NORTHGCP,0.392,0,0.415,18.94,vaccine,0,0,0,0,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+937,NORTHGCP,0.61,0,0.783,21.71,vaccine,25970.2,42878,1,1,2022,Plate 44,Plate 52,Rohr,after,6/20/22,6/30/22,10
+939,NORTHGCP,0.426,0,0.655,19.4,vaccine,0,2274.8,0,1,2022,Plate 46,Plate 51,Rohr,after,6/20/22,6/30/22,10
+941,NORTHGCP,0.412,0,0.501,18.21,vaccine,0,7744.9,0,1,2022,Plate 46,Plate 52,Rohr,after,6/20/22,6/30/22,10
+943,NORTHGCP,0.444,0,0.516,18.85,vaccine,0,2517.8,0,1,2022,Plate 46,Plate 52,Rohr,after,6/20/22,6/30/22,10
+945,NORTHGCP,0.44,0,0.748,21.27,vaccine,0,18724.9,0,1,2022,Plate 46,Plate 52,Rohr,after,6/20/22,6/30/22,10
+946,NORTHGCP,0.343,0,0.404,16.95,vaccine,0,1124.5,0,1,2022,Plate 46,Plate 54,Rohr,after,6/23/22,7/3/22,10
+947,NORTHGCP,0.5,0,0.54,21.82,vaccine,0,45117.9,0,1,2022,Plate 46,Plate 52,Rohr,after,6/20/22,6/30/22,10
+949,NORTHGCP,0.486,0,0.545,20.07,vaccine,0,7492.2,0,1,2022,Plate 46,Plate 52,Rohr,after,6/20/22,6/30/22,10
+951,NORTHGCP,0.462,0,0.564,19.44,vaccine,0,149.5,0,1,2022,Plate 46,Plate 51,Rohr,after,6/20/22,6/30/22,10
+952,GLORGCP,0.468,0,0.414,17.14,vaccine,0,9069.6,0,1,2022,Plate 47,Plate 48,Rohr,after,6/30/22,7/10/22,10
+954,GLORGCP,0.529,0,0.479,19.98,vaccine,0,4313.9,0,1,2022,Plate 47,Plate 49,Rohr,after,6/30/22,7/10/22,10
+955,GLORGCP,0.499,0,0.66,19.05,vaccine,14.1,19245.3,1,1,2022,Plate 47,Plate 54,Rohr,after,6/30/22,7/3/22,3
+956,GLORGCP,0.678,0,0.55,20.58,vaccine,0,15976.7,0,1,2022,Plate 47,Plate 48,Rohr,after,6/30/22,7/10/22,10
+957,GLORGCP,0.568,0,0.431,18.38,vaccine,0,3218.5,0,1,2022,Plate 47,Plate 54,Rohr,after,6/30/22,7/3/22,3
+958,GLORGCP,0.551,0,0.493,18.74,vaccine,0,12667.6,0,1,2022,Plate 47,Plate 51,Rohr,after,6/30/22,7/10/22,10
+960,GLORGCP,0.564,0,0.522,20.66,vaccine,84.5,1890.6,1,1,2022,Plate 47,Plate 50,Rohr,after,6/30/22,7/10/22,10
+962,GLORGCP,0.371,0,0.373,17.41,vaccine,0,3725.1,0,1,2022,Plate 47,Plate 51,Rohr,after,6/30/22,7/10/22,10
+964,GLORGCP,0.409,0,0.347,16.92,vaccine,0,497.6,0,1,2022,Plate 47,Plate 50,Rohr,after,6/30/22,7/10/22,10
+965,GLORGCP,0.381,0,0.378,17.87,vaccine,0,2422.5,0,1,2022,Plate 47,Plate 54,Rohr,after,6/30/22,7/3/22,3
+968,GLORGCP,0.433,0,0.501,17.85,vaccine,0,2840.9,0,1,2022,Plate 47,Plate 50,Rohr,after,6/30/22,7/10/22,10
+969,GLORGCP,0.515,0,0.597,19.37,vaccine,0,7522.4,0,1,2022,Plate 47,Plate 54,Rohr,after,6/23/22,7/3/22,10
+970,GLORGCP,0.444,0,0.488,17.87,vaccine,1.2,10059,1,1,2022,Plate 47,Plate 49,Rohr,after,6/30/22,7/10/22,10
+971,GLORGCP,0.514,0,0.444,18.36,vaccine,0,96.4,0,1,2022,Plate 47,Plate 54,Rohr,after,6/23/22,7/3/22,10
+972,GLORGCP,0.489,0,0.337,17.63,vaccine,0,0,0,0,2022,Plate 47,Plate 48,Rohr,after,6/30/22,7/10/22,10
+974,GLORGCP,0.537,0,0.541,19.04,vaccine,20.4,4389,1,1,2022,Plate 47,Plate 48,Rohr,after,6/30/22,7/10/22,10
+976,GLORGCP,0.682,0,0.604,20.99,vaccine,0,246.1,0,1,2022,Plate 47,Plate 51,Rohr,after,6/30/22,7/10/22,10
+978,GLORGCP,0.48,0,0.443,19.32,vaccine,0,2627.8,0,1,2022,Plate 47,Plate 48,Rohr,after,6/30/22,7/10/22,10
+980,GLORGCP,0.442,0,0.615,20.06,vaccine,0,0,0,0,2022,Plate 47,Plate 50,Rohr,after,6/30/22,7/10/22,10
+981,GLORGCP,0.453,0,0.507,19.03,vaccine,0,385.5,0,1,2022,Plate 47,Plate 54,Rohr,after,6/23/22,7/3/22,10
+982,GLORGCP,0.589,0,0.565,18.9,vaccine,0,16607.9,0,1,2022,Plate 47,Plate 51,Rohr,after,6/30/22,7/10/22,10
+983,GLORGCP,0.431,0,0.431,19.45,vaccine,3.6,3314.6,1,1,2022,Plate 47,Plate 54,Rohr,after,6/23/22,7/3/22,10
+984,GLORGCP,0.55,0,0.606,20.8,vaccine,0,0,0,0,2022,Plate 47,Plate 50,Rohr,after,6/30/22,7/10/22,10
+985,GLORGCP,0.607,0,0.543,21.35,vaccine,4.8,8616.7,1,1,2022,Plate 47,Plate 54,Rohr,after,6/23/22,7/3/22,10
+986,GLORGCP,0.501,1,0.443,NA,vaccine,28.9,345.2,1,1,2022,Plate 47,Plate 50,Rohr,after,6/30/22,7/10/22,10
+987,GLORGCP,0.57,0,0.612,19.75,vaccine,6.4,0,1,0,2022,Plate 47,Plate 54,Rohr,after,6/23/22,7/3/22,10
+988,GLORGCP,0.46,0,0.445,18.63,vaccine,0,180.5,0,1,2022,Plate 47,Plate 50,Rohr,after,6/30/22,7/10/22,10
+989,GLORGCP,0.546,0,0.602,22.23,vaccine,0,6712.9,0,1,2022,Plate 47,Plate 54,Rohr,after,6/23/22,7/3/22,10
+990,GLORGCP,0.475,0,0.366,18.23,vaccine,0,10439.7,0,1,2022,Plate 47,Plate 50,Rohr,after,6/30/22,7/10/22,10
+991,GLORGCP,0.366,0,0.326,17.32,vaccine,NA,NA,NA,NA,2022,NA,NA,Rohr,after,6/23/22,7/3/22,10
+992,GLORGCP,0.498,0,0.575,17.8,vaccine,NA,NA,NA,NA,2022,NA,Plate 48,Rohr,after,6/30/22,7/10/22,10
+995,NTALKGCP,0.488,0,0.494,19.44,sham,0,NA,0,NA,2022,Plate 57,Plate 54,Rohr,after,6/23/22,7/3/22,10
+996,NTALKGCP,0.626,0,0.605,21.03,sham,0,3051.3,0,1,2022,Plate 47,Plate 52,Rohr,after,6/30/22,7/10/22,10
+998,NTALKGCP,0.505,1,NA,NA,sham,0,NA,0,NA,2022,Plate 47,NA,Rohr,after,6/23/22,6/29/22,6
+999,NTALKGCP,0.543,0,0.565,20.16,sham,8.5,1518.1,1,1,2022,Plate 47,Plate 54,Rohr,after,6/23/22,7/3/22,10
+1000,NTALKGCP,0.49,0,0.463,18.88,sham,0,867.2,0,1,2022,Plate 47,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1004,NTALKGCP,0.58,0,0.554,21.74,sham,0,4316.1,0,1,2022,Plate 57,Plate 54,Rohr,after,6/30/22,7/10/22,10
+1006,NTALKGCP,0.678,0,0.986,21.78,sham,48.8,317.6,1,1,2022,Plate 47,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1007,NTALKGCP,0.511,0,0.457,19.47,sham,17.1,9164.1,1,1,2022,Plate 47,Plate 54,Rohr,after,6/23/22,7/3/22,10
+1008,NTALKGCP,0.413,0,NA,NA,sham,0,156.4,0,1,2022,Plate 47,Plate 57,Rohr,after,NA,NA,NA
+1009,NTALKGCP,0.526,0,0.646,19.82,sham,0,2106.4,0,1,2022,Plate 47,Plate 54,Rohr,after,6/23/22,7/3/22,10
+1010,NTALKGCP,0.385,0,0.391,17.52,sham,2.6,3489.8,1,1,2022,Plate 47,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1013,NTALKGCP,0.473,0,0.579,21.29,sham,0,1285.4,0,1,2022,Plate 57,Plate 54,Rohr,after,6/23/22,7/3/22,10
+1014,NTALKGCP,0.708,0,0.701,20.63,sham,0,26364.4,0,1,2022,Plate 57,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1016,NTALKGCP,0.691,0,0.63,20.73,sham,103.5,23.6,1,1,2022,Plate 57,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1018,NTALKGCP,0.794,0,0.847,22.01,sham,55.3,0,1,0,2022,Plate 47,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1022,NTALKGCP,0.684,0,0.752,21.77,sham,0,6851.6,0,1,2022,Plate 57,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1023,NTALKGCP,0.534,1,NA,NA,sham,0,NA,0,NA,2022,Plate 57,NA,Rohr,after,6/23/22,6/29/22,6
+1024,NTALKGCP,0.55,0,0.687,20.53,sham,0,1880.9,0,1,2022,Plate 57,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1025,NTALKGCP,0.403,0,0.35,18.41,sham,3.9,2017.8,1,1,2022,Plate 57,Plate 54,Rohr,after,6/23/22,7/3/22,10
+1026,NTALKGCP,0.479,0,0.499,19.84,sham,210.1,0,1,0,2022,Plate 57,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1028,NTALKGCP,0.578,0,0.613,19.39,sham,0,64926,0,1,2022,Plate 57,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1030,NTALKGCP,0.596,0,0.682,20.68,sham,0,1957,0,1,2022,Plate 57,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1031,NTALKGCP,0.721,0,0.956,22.92,sham,188.4,624.8,1,1,2022,Plate 57,Plate 54,Rohr,after,6/23/22,7/3/22,10
+1032,NTALKGCP,0.424,0,0.435,18.98,sham,60.4,0,1,0,2022,Plate 57,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1033,NTALKGCP,0.621,0,0.561,21.12,sham,180,NA,1,NA,2022,Plate 57,NA,Rohr,after,6/23/22,7/3/22,10
+1034,NTALKGCP,0.601,0,0.555,20.73,sham,0,803.2,0,1,2022,Plate 57,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1035,NTALKGCP,0.512,0,0.615,21.44,sham,106.6,NA,1,NA,2022,Plate 57,NA,Rohr,after,6/23/22,7/3/22,10
+1036,PPKBOR,0.273,0,0.291,16.79,vaccine,70.5,12931.7,1,1,2022,Plate 57,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1037,PPKBOR,0.22,0,0.28,16.4,vaccine,0,NA,0,NA,2022,Plate 57,NA,Rohr,after,6/23/22,7/3/22,10
+1039,PPKBOR,0.434,0,0.496,19.65,vaccine,0,NA,0,NA,2022,Plate 57,NA,Rohr,after,6/23/22,7/3/22,10
+1040,PPKBOR,0.27,0,0.32,15.77,vaccine,368.4,14634.5,1,1,2022,Plate 57,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1042,PPKBOR,0.227,0,0.267,16.3,vaccine,3,33452.7,1,1,2022,Plate 57,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1043,PPKBOR,0.303,0,0.415,17.13,vaccine,2113.7,29037.5,1,1,2022,Plate 57,Plate 54,Rohr,after,6/23/22,7/3/22,10
+1044,PPKBOR,0.323,0,0.281,17.52,vaccine,0,83894.8,0,1,2022,Plate 57,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1045,PPKBOR,0.267,0,0.297,16.19,vaccine,91.7,NA,1,NA,2022,Plate 57,NA,Rohr,after,6/23/22,7/3/22,10
+1046,PPKBOR,0.356,0,0.372,18.09,vaccine,75.7,997357.6,1,1,2022,Plate 57,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1047,PPKBOR,0.358,0,0.423,17.34,vaccine,0,NA,0,NA,2022,Plate 57,NA,Rohr,after,6/23/22,7/3/22,10
+1048,PPKBOR,0.232,0,0.281,15.87,vaccine,0,56.1,0,1,2022,Plate 57,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1049,PPKBOR,0.308,0,0.309,16.51,vaccine,0,NA,0,NA,2022,Plate 57,NA,Rohr,after,6/23/22,7/3/22,10
+1050,PPKBOR,0.326,0,0.258,15.71,vaccine,48658.5,54808.1,1,1,2022,Plate 57,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1051,PPKBOR,0.356,0,0.332,17.27,vaccine,348,68087.1,1,1,2022,Plate 57,Plate 54,Rohr,after,6/23/22,7/3/22,10
+1052,PPKBOR,0.315,0,0.326,16.37,vaccine,150.5,4210.3,1,1,2022,Plate 57,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1053,PPKBOR,0.394,NA,NA,NA,vaccine,3004.5,NA,1,NA,2022,Plate 57,NA,Rohr,after,6/23/22,NA,NA
+1054,PPKBOR,0.227,0,0.256,15.18,vaccine,0,222344.9,0,1,2022,Plate 57,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1055,PPKBOR,0.243,0,0.234,15.16,vaccine,249,39347.7,1,1,2022,Plate 45,Plate 54,Rohr,after,6/23/22,7/3/22,10
+1056,PPKBOR,0.264,0,0.309,15.82,vaccine,0,5563,0,1,2022,Plate 45,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1057,PPKBOR,0.349,0,0.279,17.28,vaccine,1598.9,NA,1,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1058,CA-MANZA,0.731,0,0.565,20.14,vaccine,0,67712,0,1,2022,Plate 45,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1059,CA-MANZA,0.545,0,0.553,19.23,vaccine,576.1,NA,1,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1060,CA-MANZA,0.765,0,0.511,21.08,vaccine,45819.8,686619.8,1,1,2022,Plate 45,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1061,CA-MANZA,0.587,0,0.517,20.28,vaccine,303.8,NA,1,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1062,CA-MANZA,0.633,0,0.646,21.85,vaccine,0,38788.5,0,1,2022,Plate 45,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1063,CA-MANZA,0.618,0,0.632,21.7,vaccine,177.6,6819.1,1,1,2022,Plate 45,Plate 54,Rohr,after,6/23/22,7/3/22,10
+1064,CA-MANZA,0.474,0,0.409,19.06,vaccine,555.3,0,1,0,2022,Plate 45,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1065,CA-MANZA,0.575,0,0.636,21.61,vaccine,24564.2,NA,1,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1066,CA-MANZA,0.611,0,0.544,20.52,vaccine,0,355631.9,0,1,2022,Plate 45,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1067,CA-MANZA,0.404,0,0.935,21.76,vaccine,1109.8,NA,1,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1068,CA-MANZA,0.663,0,0.611,20.32,vaccine,1131.3,2762.8,1,1,2022,Plate 45,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1069,CA-MANZA,0.702,0,0.795,22.56,vaccine,177.7,20307.9,1,1,2022,Plate 45,Plate 54,Rohr,after,6/23/22,7/3/22,10
+1070,CA-MANZA,0.613,0,0.443,19.41,vaccine,0,288452.1,0,1,2022,Plate 45,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1071,CA-MANZA,0.533,0,0.611,19.17,vaccine,0,NA,0,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1072,CA-MANZA,0.803,0,0.621,21.85,vaccine,0,429906.3,0,1,2022,Plate 45,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1073,CA-MANZA,0.534,0,0.798,20.22,vaccine,0,NA,0,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1074,CA-MANZA,0.674,0,0.66,21.6,vaccine,338.6,149889.8,1,1,2022,Plate 45,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1075,CA-MANZA,0.615,0,0.766,20.99,vaccine,122.6,NA,1,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1076,CA-MANZA,0.639,0,0.579,20.33,vaccine,0,196554.5,0,1,2022,Plate 45,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1078,CA-MANZA,0.495,1,0.426,18.63,vaccine,0,2434115.6,0,1,2022,Plate 45,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1079,CA-MANZA,0.459,0,0.436,19.51,vaccine,0,NA,0,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1080,CA-MANZA,0.629,0,0.651,20.04,vaccine,158.6,47401.9,1,1,2022,Plate 45,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1081,CA-MANZA,0.514,0,0.577,19.73,vaccine,0,NA,0,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1082,CA-MANZA,0.593,0,0.593,19.94,vaccine,405.9,736.2,1,1,2022,Plate 45,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1083,CA-MANZA,0.511,0,0.647,20.45,vaccine,0,163155.3,0,1,2022,Plate 45,Plate 54,Rohr,after,6/23/22,7/3/22,10
+1084,CA-MANZA,0.577,0,0.525,19.91,vaccine,5.7,48753.8,1,1,2022,Plate 45,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1085,CA-MANZA,0.611,0,0.781,21.41,vaccine,0,NA,0,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1086,CA-MANZA,0.57,0,0.485,19.46,vaccine,0,0,0,0,2022,Plate 45,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1087,CA-MANZA,0.584,0,0.617,20.03,vaccine,0,NA,0,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1088,CA-MANZA,0.594,0,0.462,18.1,vaccine,0,437711.3,0,1,2022,Plate 45,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1089,CA-MANZA,0.71,0,0.721,21.24,vaccine,0,NA,0,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1090,CA-MANZA,0.396,0,0.371,16.96,vaccine,485.5,177290.9,1,1,2022,Plate 45,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1091,CA-MANZA,0.924,0,1.28,22.68,vaccine,0,NA,0,NA,2022,Plate 45,NA,Rohr,after,6/23/22,7/3/22,10
+1092,CA-MANZA,0.544,0,0.521,20.52,vaccine,0,159566.7,0,1,2022,Plate 45,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1094,CA-MANZA,0.477,0,0.553,19.58,vaccine,0,4088.5,0,1,2022,Plate 44,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1095,CA-MANZA,0.574,0,0.681,20.88,vaccine,0,59355.3,0,1,2022,Plate 44,Plate 54,Rohr,after,6/23/22,7/3/22,10
+1096,CA-MANZA,0.402,0,0.422,18.75,vaccine,0,6742.3,0,1,2022,Plate 44,Plate 52,Rohr,after,6/30/22,7/10/22,10
+1097,CA-MANZA,0.382,0,0.449,18.18,vaccine,185.7,NA,1,NA,2022,Plate 44,NA,Rohr,after,6/23/22,7/3/22,10
+1098,CA-MANZA,0.437,0,0.491,18.53,vaccine,7826.1,1216.4,1,1,2022,Plate 44,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1099,CA-MANZA,0.708,0,0.765,21.37,vaccine,313.8,NA,1,NA,2022,Plate 44,NA,Rohr,after,6/23/22,7/3/22,10
+1100,CA-MANZA,0.66,0,0.637,20.99,vaccine,167.5,11556.1,1,1,2022,Plate 44,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1101,CA-MANZA,0.529,0,0.644,20,vaccine,0,NA,0,NA,2022,Plate 44,NA,Rohr,after,6/23/22,7/3/22,10
+1103,CABINBOR,0.866,0,0.828,22.16,sham,0,55048.1,0,1,2022,Plate 48,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1105,CABINBOR,0.862,0,0.711,20.42,sham,0,6943.4,0,1,2022,Plate 48,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1106,CABINBOR,0.679,0,0.782,23.27,sham,0,132.2,0,1,2022,Plate 48,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1107,CABINBOR,0.398,0,0.405,18.43,sham,0,175.8,0,1,2022,Plate 48,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1109,CABINBOR,0.79,0,1.02,22.9,sham,333.1,15356.7,1,1,2022,Plate 48,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1111,CABINBOR,0.864,0,0.837,22.18,sham,0,17885.7,0,1,2022,Plate 48,Plate 54,Rohr,after,6/30/22,7/10/22,10
+1113,CABINBOR,0.661,0,0.767,21.07,sham,0,10970.4,0,1,2022,Plate 48,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1115,CABINBOR,0.292,0,0.309,16.83,sham,0,899,0,1,2022,Plate 48,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1117,CABINBOR,0.548,0,0.705,20.86,sham,0,4376.8,0,1,2022,Plate 48,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1119,CABINBOR,0.642,0,0.679,20.96,sham,0,8610,0,1,2022,Plate 48,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1121,GRAMPBOR,0.359,0,0.415,16.81,sham,0,46874.6,0,1,2022,Plate 48,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1122,GRAMPBOR,0.45,0,0.361,17.06,sham,0,12906.3,0,1,2022,Plate 48,Plate 54,Rohr,after,7/11/23,7/21/23,10
+1123,GRAMPBOR,0.313,0,0.375,17.19,sham,0,4528.1,0,1,2022,Plate 48,Plate 52,Rohr,after,6/30/22,7/10/22,10
+1124,GRAMPBOR,0.342,0,0.311,16.94,sham,0,0,0,0,2022,Plate 48,Plate 54,Rohr,after,7/11/23,7/21/23,10
+1125,GRAMPBOR,0.354,0,0.408,17.54,sham,0,4076.5,0,1,2022,Plate 48,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1126,GRAMPBOR,0.369,0,0.352,18.09,sham,0,219.1,0,1,2022,Plate 49,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1127,GRAMPBOR,0.515,0,0.505,19.95,sham,0,2776.3,0,1,2022,Plate 49,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1128,GRAMPBOR,0.333,0,0.323,17.16,sham,0,290,0,1,2022,Plate 49,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1129,GRAMPBOR,0.326,0,0.347,17.45,sham,230.2,24750.3,1,1,2022,Plate 49,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1130,GRAMPBOR,0.39,0,0.401,17.74,sham,0,303.3,0,1,2022,Plate 49,Plate 54,Rohr,after,7/11/23,7/21/23,10
+1131,GRAMPBOR,0.294,0,0.353,16.44,sham,1051.4,10472.7,1,1,2022,Plate 49,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1132,GRAMPBOR,0.411,0,0.334,18.76,sham,0,0,0,0,2022,Plate 49,Plate 54,Rohr,after,7/11/23,7/21/23,10
+1133,GRAMPBOR,0.444,0,0.535,18.53,sham,0,4092.5,0,1,2022,Plate 49,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1134,GRAMPBOR,0.511,0,0.426,18.57,sham,0,1509.6,0,1,2022,Plate 49,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1135,GRAMPBOR,0.433,0,0.45,19.93,sham,0,82616.6,0,1,2022,Plate 49,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1136,GRAMPBOR,0.377,0,0.395,17.27,sham,0,28.3,0,1,2022,Plate 49,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1137,GRAMPBOR,0.397,0,0.37,18.87,sham,0,3462.2,0,1,2022,Plate 49,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1139,GRAMPBOR,0.378,0,0.362,17.34,sham,2935.8,5189.2,1,1,2022,Plate 49,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1140,GRAMPBOR,0.381,0,0.337,17.93,sham,0,0,0,0,2022,Plate 49,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1141,GRAMPBOR,0.281,0,0.278,16.42,sham,0,150928.7,0,1,2022,Plate 50,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1142,GRAMPBOR,0.325,0,0.323,16.94,sham,0,482.2,0,1,2022,Plate 50,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1143,GRAMPBOR,0.468,0,0.48,20.03,sham,0,28640.4,0,1,2022,Plate 50,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1144,GRAMPBOR,0.321,0,0.302,15.66,sham,0,182,0,1,2022,Plate 50,Plate 54,Rohr,after,7/11/23,7/21/23,10
+1145,GRAMPBOR,0.325,0,0.382,17.94,sham,0,28310.6,0,1,2022,Plate 50,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1146,YBBA,0.388,0,0.362,17.97,sham,0,140.4,0,1,2022,Plate 50,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1147,YBBA,0.575,0,0.526,20.32,sham,0,2573.5,0,1,2022,Plate 50,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1148,YBBA,0.557,0,0.551,20.48,sham,0,76.6,0,1,2022,Plate 50,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1149,YBBA,0.491,0,0.559,19.57,sham,0,33215.4,0,1,2022,Plate 50,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1151,YBBA,0.472,0,0.671,19.91,sham,0,1269,0,1,2022,Plate 50,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1152,YBBA,0.611,0,0.709,20.38,sham,0,0,0,0,2022,Plate 50,Plate 54,Rohr,after,7/11/23,7/21/23,10
+1153,YBBA,0.525,0,0.439,19.88,sham,0,5167.2,0,1,2022,Plate 50,Plate 50,Rohr,after,6/30/22,7/10/23,10
+1155,YBBA,0.428,0,0.49,18.22,sham,0,36608,0,1,2022,Plate 50,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1156,YBBA,0.462,0,0.422,18.69,sham,0,631.7,0,1,2022,Plate 50,Plate 54,Rohr,after,7/11/23,7/21/23,10
+1157,YBBA,0.704,0,0.686,21.82,sham,0,33093.5,0,1,2022,Plate 50,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1158,YBBA,0.586,0,0.548,18.55,sham,0,220.5,0,1,2022,Plate 51,Plate 54,Rohr,after,7/11/23,7/21/23,10
+1159,YBBA,0.747,0,0.827,22.64,sham,0,13113.3,0,1,2022,Plate 51,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1160,YBBA,0.612,0,0.562,19.79,sham,0,261.3,0,1,2022,Plate 51,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1161,YBBA,0.598,0,0.652,21.16,sham,0,2158.9,0,1,2022,Plate 51,Plate 52,Rohr,after,6/30/22,7/10/22,10
+1162,YBBA,0.581,0,0.522,19.61,sham,0,900,0,1,2022,Plate 51,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1163,YBBA,0.557,0,0.661,20.47,sham,0,39622.2,0,1,2022,Plate 51,Plate 48,Rohr,after,6/30/22,7/10/22,10
+1164,YBBA,0.748,0,0.624,21.48,sham,0,0,0,0,2022,Plate 51,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1165,YBBA,0.616,0,0.751,22.35,sham,0,5498.9,0,1,2022,Plate 51,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1166,YBBA,0.389,0,0.35,18.57,sham,0,876.4,0,1,2022,Plate 51,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1167,YBBA,0.627,0,0.652,19.87,sham,0,6398.8,0,1,2022,Plate 51,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1168,UCTBOR,0.762,0,0.67,22.88,vaccine,0,560.2,0,1,2022,Plate 51,Plate 54,Rohr,after,7/11/23,7/21/23,10
+1169,UCTBOR,0.5,0,0.547,20.61,vaccine,0,172551.2,0,1,2022,Plate 51,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1170,UCTBOR,0.925,0,0.858,22.61,vaccine,0,730.5,0,1,2022,Plate 51,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1171,UCTBOR,0.738,0,1.033,22.92,vaccine,0,1794.2,0,1,2022,Plate 51,Plate 51,Rohr,after,6/30/22,7/10/22,10
+1172,UCTBOR,0.641,0,0.771,21.45,vaccine,0,654.2,0,1,2022,Plate 51,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1173,UCTBOR,0.622,0,0.642,20.66,vaccine,0,68399.7,0,1,2022,Plate 51,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1175,UCTBOR,0.801,0,0.724,22.61,vaccine,0,1480.3,0,1,2022,Plate 51,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1181,UCTBOR,0.882,0,0.321,18.7,vaccine,72.2,9216.4,1,1,2022,Plate 54,Plate 52,Rohr,after,6/30/22,7/10/22,10
+1183,UCTBOR,0.742,0,0.858,22.83,vaccine,0,36512.6,0,1,2022,Plate 48,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1185,UCTBOR,0.871,0,0.919,22.68,vaccine,0,22028.7,0,1,2022,Plate 50,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1186,UCTBOR,0.718,0,0.866,21.61,vaccine,0,0,0,0,2022,Plate 50,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1191,GRAMPBOR,0.491,0,0.626,19.33,sham,0,2518,0,1,2022,Plate 54,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1192,GRAMPBOR,0.303,NA,NA,NA,sham,0,NA,0,NA,2022,Plate 48,NA,Rohr,after,NA,NA,NA
+1193,GRAMPBOR,0.307,0,0.285,16.38,sham,0,1067.1,0,1,2022,Plate 48,Plate 52,Rohr,after,6/30/22,7/10/22,10
+1194,GRAMPBOR,0.307,0,0.273,16.64,sham,0,10.3,0,1,2022,Plate 48,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1195,GRAMPBOR,0.414,0,0.388,20.74,sham,0,5275.7,0,1,2022,Plate 48,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1197,GRAMPBOR,0.464,0,0.292,16.67,sham,0,3052.6,0,1,2022,Plate 48,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1199,GRAMPBOR,0.439,0,0.367,17.85,sham,0,270929.3,0,1,2022,Plate 45,Plate 49,Rohr,after,6/30/22,7/10/22,10
+1201,GRAMPBOR,0.511,0,0.511,19.23,sham,0,6048.3,0,1,2022,Plate 45,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1203,GRAMPBOR,0.325,0,0.377,18.1,sham,0,3177.7,0,1,2022,Plate 52,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1204,GRAMPBOR,0.408,0,0.333,18.01,sham,0,323.8,0,1,2022,Plate 52,Plate 57,Rohr,after,7/11/23,7/21/23,10
+1205,GRAMPBOR,0.381,0,0.482,17.22,sham,0,1795,0,1,2022,Plate 52,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1207,GRAMPBOR,0.346,0,0.34,16.87,sham,0,10396.2,0,1,2022,Plate 52,Plate 50,Rohr,after,6/30/22,7/10/22,10
+1209,GRAMPBOR,0.374,0,0.344,17.91,sham,0,62335.8,0,1,2022,Plate 52,Plate 49,Rohr,after,6/30/22,7/10/22,10
